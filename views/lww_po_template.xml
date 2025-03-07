@@ -181,7 +181,9 @@
                                         <!-- Point of Charge -->
                                             <td class="text-center" style="font-size: 15px;"><span t-esc="o.incoterm_id.name or ''" style="font-size: 15px;"/></td>
                                         <!-- Ship Via (Link to Receipt on carrier_id.name) -->
-                                            <td class="text-center" style="font-size: 15px;"><span t-esc="o.ship_via.name or ''" style="font-size: 15px;"/></td>
+                                            <td class="text-center" style="font-size: 15px;">
+                                                <span t-esc="dict(o.fields_get(allfields=['ship_via'])['ship_via']['selection']).get(o.ship_via, '')" style="font-size: 15px;"/>
+                                            </td>
                                         <!-- Your Ref No -->
                                             <!-- <td class="text-center" style="font-size: 15px;"><span t-esc="o.origin or ''" style="font-size: 15px;"/></td> -->
                                             <td class="text-center" style="font-size: 15px;"></td>
