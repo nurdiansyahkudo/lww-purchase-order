@@ -186,7 +186,7 @@
                                             </td>
                                         <!-- Your Ref No -->
                                             <!-- <td class="text-center" style="font-size: 15px;"><span t-esc="o.origin or ''" style="font-size: 15px;"/></td> -->
-                                            <td class="text-center" style="font-size: 15px;"></td>
+                                            <td class="text-center" style="font-size: 15px;"><span t-esc="o.partner_ref or ''" style="font-size: 15px;"/></td>
                                         </tr>
                                     </tbody>
                                 </table>
