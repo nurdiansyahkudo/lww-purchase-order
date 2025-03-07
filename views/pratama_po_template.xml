@@ -59,7 +59,7 @@
                                             <span t-esc='o.partner_id.city'/>
                                         </div>
                                     </div>
-                                    <div class='row'>
+                                    <!-- <div class='row'>
                                         <div class='col-3'>
                                             <p style='text-align: left; font-size: 16px;'><em> </em></p>
                                         </div>
@@ -67,7 +67,7 @@
                                             <span t-esc='o.partner_id.state_id.name'/>
                                         </div>
                                     </div>
-                                    <div class='row'>
+                                    <div class='row'> -->
                                         <div class='col-3'>
                                             <p style='text-align: left; font-size: 16px;'><em> </em></p>
                                         </div>
@@ -92,11 +92,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Reference and Date Section -->
-                            
+                            </div>                            
                             <!-- Table Product -->
-                            <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
+                            <div class="row" style="margin-bottom: 5px; margin-top: 10px;">
                                 <table class="table table-sm" style="margin-bottom: 5px; border: 0.5px;">
                                     <thead style="border: 0.5px;">
                                         <tr>
@@ -139,7 +137,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class='row' style="margin-bottom: 10px; margin-top: 10px; border-bottom: 2px solid #205295">
+                            <div class='row' style="margin-bottom: 5px; margin-top: 5px; border-bottom: 2px solid #205295">
                                 <div class="col-8"></div>
                                 <div class="col-4">
                                     <p style='text-align: left; font-size: 16px;'><em style="font-weight: bold;">Sub Total: </em>
