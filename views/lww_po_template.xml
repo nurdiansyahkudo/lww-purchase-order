@@ -181,7 +181,7 @@
                                         <!-- Point of Charge -->
                                             <td class="text-center" style="font-size: 15px;"><span t-esc="o.incoterm_id.name or ''" style="font-size: 15px;"/></td>
                                         <!-- Ship Via (Link to Receipt on carrier_id.name) -->
-                                            <td class="text-center" style="font-size: 15px;"><span t-esc="o.ship_via or ''" style="font-size: 15px;"/></td>
+                                            <td class="text-center" style="font-size: 15px;"><span t-esc="o.ship_via.name or ''" style="font-size: 15px;"/></td>
                                         <!-- Your Ref No -->
                                             <!-- <td class="text-center" style="font-size: 15px;"><span t-esc="o.origin or ''" style="font-size: 15px;"/></td> -->
                                             <td class="text-center" style="font-size: 15px;"></td>
