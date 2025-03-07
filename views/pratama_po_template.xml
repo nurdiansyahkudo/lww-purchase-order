@@ -126,6 +126,16 @@
                                         <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
                                     </p>
                                 </div>
+                                <div class="col-4">
+                                    <p style='text-align: left; font-size: 16px;'><em style="font-weight: bold;">Pajak          : </em>
+                                        <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <p style='text-align: left; font-size: 16px;'><em style="font-weight: bold;">Total      : </em>
+                                        <span t-esc="'{:,.2f}'.format(o.amount_total)"/>
+                                    </p>
+                                </div>
                             </div>
                             <div style="page-break-after:auto;">
                                 <!-- Note Section -->
