@@ -108,7 +108,7 @@
                                             <!-- Unit Price -->
                                                 <td class="text-right" style="font-size: 15px; text-align: right;"><span t-esc="'{:,.2f}'.format(line.price_unit) or ''" style="font-size: 15px; text-align: right;"/></td>
                                             <!-- Disc -->
-                                                <td class="text-center" style="font-size: 15px;"><span t-esc="int(line.discount_amount) or '0'" style="font-size: 15px;"/>%</td>
+                                                <!-- <td class="text-center" style="font-size: 15px;"><span t-esc="int(line.discount_amount) or '0'" style="font-size: 15px;"/>%</td> -->
                                             <!-- Currency -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="o.currency_id.name or ''" style="font-size: 15px;"/></td>
                                             <!-- Total -->
