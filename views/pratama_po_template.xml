@@ -84,7 +84,7 @@
                                         <tr>
                                             <th style="font-size: 16px; text-align: center; font-weight: bold;">No</th>
                                             <th style="font-size: 16px; text-align: center; font-weight: bold;">Nama Produk</th>                                            
-                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Produk ID</th>
+                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Part Number</th>
                                             <th style="font-size: 16px; text-align: center; font-weight: bold;">Kuantitas</th>
                                             <th style="font-size: 16px; text-align: center; font-weight: bold;">Harga</th>
                                             <th style="font-size: 16px; text-align: center; font-weight: bold;">Diskon</th>
@@ -102,7 +102,7 @@
                                             <!-- Product Name -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="line.product_id.name or ''" style="font-size: 15px;"/></td>
                                             <!-- Part Number -->
-                                                <td class="text-center" style="font-size: 15px;"><span t-esc="line.product_id.name_0 or ''" style="font-size: 15px;"/></td>
+                                                <td class="text-center" style="font-size: 15px;"><span t-esc="line.product_id.default_code or ''" style="font-size: 15px;"/></td>
                                             <!-- QTY -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="int(line.product_qty) or ''" style="font-size: 15px;"/></td>
                                             <!-- Unit Price -->
