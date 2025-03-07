@@ -64,22 +64,6 @@
                                             <p style='text-align: left; font-size: 16px;'><em> </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <span t-esc='o.partner_id.state_id.name'/>
-                                        </div>
-                                    </div>
-                                    <div class='row'>
-                                        <div class='col-3'>
-                                            <p style='text-align: left; font-size: 16px;'><em> </em></p>
-                                        </div>
-                                        <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <span t-esc='o.partner_id.country_id.name'/>
-                                        </div>
-                                    </div>
-                                    <div class='row'>
-                                        <div class='col-3'>
-                                            <p style='text-align: left; font-size: 16px;'><em> </em></p>
-                                        </div>
-                                        <div class='col-9' style='font-size: 16px; border: 1px;'>
                                             <span t-esc='o.partner_id.phone'/>
                                         </div>
                                     </div>
