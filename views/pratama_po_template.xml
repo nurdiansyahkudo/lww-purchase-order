@@ -124,7 +124,7 @@
                                 </table>
                             </div>
                             <!-- Sub Total dst. -->
-                            <div class='row' style="margin-bottom: 5px; margin-top: 5px; border-bottom: 2px solid #205295">
+                            <!-- <div class='row' style="margin-bottom: 5px; margin-top: 5px; border-bottom: 2px solid #205295"> -->
                                 <div class="col-8"></div>
                                 <div class="col-4">
                                     <p style='text-align: left; font-size: 16px;'><em style="font-weight: bold;">Sub Total      : </em>
@@ -141,7 +141,6 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
                                 <div class="col-8"></div>
                                 <div class="col-4">
                                     <p style='text-align: left; font-size: 16px;'>
@@ -150,6 +149,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
                             <div style="page-break-after:auto;">
                                 <!-- Note Section -->
                                 <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
