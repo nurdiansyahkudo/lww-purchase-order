@@ -24,6 +24,18 @@
                             <div class="text" style="font-size: 30px; text-align: center; padding-top: 50px;">
                                 <h1 style="font-size: 2rem;">
                                     <strong>PURCHASE ORDER</strong>
+                                    <div class="col-6 text-left">
+                                        <strong style="font-size: 16px; margin-left: 5rem;">No: </strong>
+                                        <div class='row'>
+                                            <div class='col-3'>
+                                                <p style='text-align: left; font-size: 16px;'><em> </em></p>
+                                            </div>
+                                            <div class='col-9' style='font-size: 16px; border: 1px;'>
+                                                <span t-esc="o.no_po or ''"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </h1>
                             </div>
                         </div>
