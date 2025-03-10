@@ -145,7 +145,8 @@
                                         <span t-esc="'{:,.2f}'.format(o.amount_total)"/>
                                     </p>
                                 </div>
-                                <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">                                                                
+                            </div>    
+                            <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
                             </div>
                             <div style="page-break-after:auto;">
                                 <!-- Note Section -->
