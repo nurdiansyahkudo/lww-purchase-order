@@ -27,7 +27,7 @@
                                     <div class="col-6 text-left">
                                         <strong style="font-size: 16px; margin-left: 5rem;">No: </strong>
                                         <div class='row'>
-                                            <span t-esc="o.no_po or ''"/> </br>
+                                            <span t-esc="o.no_po or ''"/>
                                         </div>
                                         <strong style="font-size: 16px; margin-left: 5rem;">Tanggal: </strong>
                                         <div class='row'>
