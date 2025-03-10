@@ -126,7 +126,7 @@
                             <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
                                 <div class="col-8"></div>
                                 <div class='row' style="margin-bottom: 5px;">
-                                    <div class="col-8"></div>
+                                    <!-- <div class="col-8"></div> -->
                                     <div class="col-4">
                                         <p style='text-align: left; font-size: 16px;'><em style="font-weight: bold;">Sub Total      : </em>
                                             <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
