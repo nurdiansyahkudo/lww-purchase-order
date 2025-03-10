@@ -27,13 +27,12 @@
                                     <div class="col-6 text-left">
                                         <strong style="font-size: 16px; margin-left: 5rem;">No: </strong>
                                         <div class='row'>
-                                            <div class='col-3'>
-                                                <p style='text-align: left; font-size: 16px;'><em> </em></p>
-                                            </div>
-                                            <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                                <span t-esc="o.no_po or ''"/>
-                                            </div>
+                                            <span t-esc="o.no_po or ''"/> </br>
                                         </div>
+                                        <strong style="font-size: 16px; margin-left: 5rem;">Tanggal: </strong>
+                                        <div class='row'>
+                                            <span t-esc="(o.date_order or o.date_approve).strftime('%d-%b-%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
+                                        </div>                                        
                                     </div>
                                 </h1>
                             </div>
