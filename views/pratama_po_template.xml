@@ -20,17 +20,16 @@
                                 </p>
                             </div>
                         </div>
-
                         <div class="col-6" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
-                            <h1 style="font-size: 2rem; margin: 0;"><strong>PURCHASE ORDER</strong></h1>                                <h1 style="font-size: 2rem;">
-                                <div style="margin-top: 10px;">
-                                    <strong style="font-size: 16px;">No: </strong>
-                                    <span t-esc="o.no_po or ''" style="font-size: 15px; display=block"/>
-
-                                    <strong style="font-size: 16px; display=block">Tanggal: </strong> 
-                                    <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
-                                </div>
-                            </h1>
+                            <h1 style="font-size: 2rem; margin: 0;">
+                               PURCHASE ORDER
+                            </h1>                                
+                            <div style="margin-top: 10px;">
+                                <strong style="font-size: 16px;">No: </strong>
+                                <span t-esc="o.no_po or ''" style="font-size: 15px; display=block"/>
+                                <strong style="font-size: 16px; display=block">Tanggal: </strong> 
+                                <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
+                            </div>
                         </div>
                     </div>
                     <!-- Main Section -->
@@ -145,8 +144,7 @@
                                         <span t-esc="'{:,.2f}'.format(o.amount_total)"/>
                                     </p>
                                 </div>
-                            </div>    
-                            <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
+                                <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
                             </div>
                             <div style="page-break-after:auto;">
                                 <!-- Note Section -->
