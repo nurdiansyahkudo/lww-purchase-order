@@ -123,7 +123,6 @@
                                 </table>
                             </div>
                             <!-- Sub Total dst. -->
-                            <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
                                 <div class="col-4"></div>
                                 <div class="col-4"></div>
                                 <div class="col-4">
@@ -154,17 +153,18 @@
                                         </p>
                                     </div> -->
                                 <!-- </div> -->
-                            </div>
                             <div style="page-break-after:auto;">
                                 <!-- Note Section -->
-                                <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
-                                    <div class="col-6 text-left">
-                                        <div class='row'>
-                                            <div class='col-3'>
-                                                <p style='text-align: right; font-size: 16px;'>Syarat dan Ketentuan : </p>
-                                            </div>
-                                            <div class='col-9' style='font-size: 16px; border: 1px; margin-left: 0.5rem;'>
-                                                <span t-esc="o.notes or ''"/>
+                                <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
+                                    <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
+                                        <div class="col-6 text-left">
+                                            <div class='row'>
+                                                <div class='col-3'>
+                                                    <p style='text-align: right; font-size: 16px;'>Syarat dan Ketentuan : </p>
+                                                </div>
+                                                <div class='col-9' style='font-size: 16px; border: 1px; margin-left: 0.5rem;'>
+                                                    <span t-esc="o.notes or ''"/>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
