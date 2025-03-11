@@ -28,15 +28,11 @@
                                PURCHASE ORDER
                             </h1>                                
                             <div style="margin-top: 0; text-align: center">
-                                <div>
-                                    <p style="font-size: 16px;">No: </p>
-                                    <span t-esc="o.no_po or ''" style="font-size: 15px; display=block"/>
-                                    <strong style="font-size: 16px; display=block"> </strong> 
-                                </div>
-                                <div>
-                                    <p style="font-size: 16px; display=block">Tanggal: </p> 
-                                    <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
-                                </div>
+                                <p style="font-size: 16px;">No: </p>
+                                <span t-esc="o.no_po or ''" style="font-size: 15px; display=block"/>
+                                
+                                <p style="font-size: 16px; display=block">Tanggal: </p> 
+                                <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
                             </div>
                         </div>
                     </div>
