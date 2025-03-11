@@ -161,8 +161,8 @@
                             <div style="page-break-after:auto;">
                                 <!-- Note Section -->
                                 <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
-                                    <div class="12 d-flex align-items-center">
-                                        <p style='font-size: 16px; margin-right: 10px;'>Syarat dan Ketentuan : </p>
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p style='font-size: 16px; margin-right: 10px; margin-bottom: 0;'>Syarat dan Ketentuan : </p>
                                             <span t-esc="o.notes or ''"/>
                                     </div>
                                 </div>
