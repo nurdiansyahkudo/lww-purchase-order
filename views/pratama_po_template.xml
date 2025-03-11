@@ -29,7 +29,7 @@
                             </h1>                                
                             <div style="margin-top: 0; text-align: center">
                                 <strong style="font-size: 16px;">No: </strong>
-                                <span t-esc="o.no_po or ''" style="font-size: 15px; display=block"/>
+                                <span t-esc="o.no_po or ''" style="font-size: 15px; display=block"/></br>
                                 <strong style="font-size: 16px; display=block">Tanggal: </strong> 
                                 <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
                             </div>
