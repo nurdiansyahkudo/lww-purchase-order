@@ -27,11 +27,11 @@
                             <h1 style="font-size: 26px; margin: 0; text-align: center">
                                PURCHASE ORDER
                             </h1>                                
-                            <div style="margin-top: 0; text-align: center">
-                                <p style="font-size: 16px;">No: </p>
-                                <span t-esc="o.no_po or ''" style="font-size: 15px; display=block"/>
+                            <div style="margin-top: 0; text-align: center; display: flex; justify-content: center; gap: 10px; align-items: center;">
+                                <p style="font-size: 16px; margin: 0">No: </p>
+                                <span t-esc="o.no_po or ''" style="font-size: 15px;"/>
                                 
-                                <p style="font-size: 16px; display=block">Tanggal: </p> 
+                                <p style="font-size: 16px; margin: 0">Tanggal: </p> 
                                 <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
                             </div>
                         </div>
