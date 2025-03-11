@@ -64,10 +64,10 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-9'>
-                                            <p style='text-align: left; font-size: 16px;'><em>Telp. </em></p>
+                                        <div class='col-3'>
+                                            <p style='text-align: left; font-size: 16px;'></p>
                                         </div>
-                                        <div class='col-9' style='font-size: 16px; border: 1px;'>
+                                        <div class='col-9' style='font-size: 16px; border: 1px;'><em>Telp. </em>
                                             <span t-esc='o.partner_id.phone'/>
                                         </div>
                                     </div>
