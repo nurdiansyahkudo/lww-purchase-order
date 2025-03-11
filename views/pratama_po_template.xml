@@ -165,9 +165,7 @@
                                         <div class="col-6 text-left">
                                             <div class='row'>
                                                 <p style='text-align: left; font-size: 16px;'>Syarat dan Ketentuan : </p>
-                                                <div class='col-9' style='font-size: 16px; border: 1px; margin-left: 0.5rem;'>
                                                     <span t-esc="o.notes or ''"/>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
