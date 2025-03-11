@@ -162,11 +162,9 @@
                                 <!-- Note Section -->
                                 <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
                                     <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
-                                        <div class="col-6 text-left">
-                                            <div class='row'>
-                                                <p style='text-align: left; font-size: 16px;'>Syarat dan Ketentuan : </p>
-                                                    <span t-esc="o.notes or ''"/>
-                                            </div>
+                                        <div class="12 d-flex align-items-center">
+                                            <p style='font-size: 16px; margin-right: 10px;'>Syarat dan Ketentuan : </p>
+                                                <span t-esc="o.notes or ''"/>
                                         </div>
                                     </div>
                                 </div>
