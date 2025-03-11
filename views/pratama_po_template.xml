@@ -36,7 +36,7 @@
                     <main>
                         <div class="page">
                             <!-- Address Section -->
-                            <div class="row" style="margin-bottom: 10px; margin-top: 10px; border-bottom: 2px solid #205295">
+                            <div style="margin-bottom: 10px; margin-top: 10px; border-bottom: 2px solid #205295">
                                 <div class="col-6 text-left">
                                     <strong style="font-size: 16px; margin-left: 5rem;">To: </strong>
                                     <div class='row'>
