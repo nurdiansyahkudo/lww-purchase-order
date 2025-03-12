@@ -112,24 +112,32 @@
                                     </tbody>
                                 </table>
                             </div>
+                            
                             <!-- Sub Total dst. -->
                             <div class='row' style="text-align: right;">
                                 <div class="col-3"></div>
                                 <div class="col-3"></div>
-                                <div class="col-3">
-                                    <div class="row" style="text-align: right;">Sub total : IDR
-                                    </div> 
-                                        <div class="row">Diskon                :</div>
+
+                                <div class="col-3" style="text-align: right">
+                                    <div class="row justify-content-end">
+                                        <div class="col-12"> Sub total : IDR </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-12">Diskon                :</div>
+                                    </div>
                                         <div class="row">Total                 :</div>
                                         <div class="row">Pajak                 :</div>
                                         <div class="row">Jumlah termasuk Pajak :</div>
                                 </div>
-                                <div class="col-3" style="text-align: right">
-                                    <div class="row" style="text-align: right;">
-                                    <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
+
+                                <!-- Kolom Nilai -->
+                                <div class="col-3" style="text-align: right;">
+                                    <div class="row justify-content-end">
+                                        <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
                                     </div>
-                                    <div class="row">
-                                    <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
+
+                                    <div class="row justify-content-row">
+                                        <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>                                    
                                 </div>
 
