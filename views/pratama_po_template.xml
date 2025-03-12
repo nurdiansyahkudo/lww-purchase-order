@@ -129,7 +129,7 @@
                                     <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
                                     </div>
                                     <div class="row">
-                                    <span t-esc="'{:,.2f}'.format(o.discount)"/>
+                                    <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>                                    
                                 </div>
 
