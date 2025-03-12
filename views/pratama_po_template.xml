@@ -41,7 +41,7 @@
                     <main>
                         <div class="page">
                             <!-- Address Section -->
-                            <div style="margin-bottom: 10px; margin-top: 10px; border-bottom: 2px solid #205295">
+                            <div style="margin-bottom: 10px; margin-top: 10px; border-bottom: 10px solid #205295">
                                 <div class="col-6 text-left">
                                     <strong style="font-size: 16px; margin-left: 0;">To: </strong>
                                     <div class='row'>
@@ -72,7 +72,7 @@
                                 </div>
                             </div>                            
                             <!-- Table Product -->
-                            <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
+                            <div class="row" style="margin-bottom: 5px; margin-top: 10px;">
                                 <table class="table table-sm" style="margin-bottom: 5px; border: 0.5px;">
                                     <thead style="border: 0.5px;">
                                         <tr>
