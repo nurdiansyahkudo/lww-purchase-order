@@ -141,12 +141,12 @@
                                     <!-- Sub Total -->
                                     <div class="row justify-content-end">
                                         <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
-                                        <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
+                                        <td><span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/></td>
                                     </div>
                                     <!-- Diskon -->
                                     <div class="row justify-content-end">
                                         <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
-                                        <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
+                                        <td><span t-esc="'{:,.2f}'.format(o.amount_tax)"/></td>
                                     </div> 
                                     <!-- Total -->
                                     <div class="row justify-content-end">
