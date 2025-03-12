@@ -113,7 +113,7 @@
                                 </table>
                             </div>
                             <!-- Sub Total dst. -->
-                            <div class='row'>
+                            <div class='row' style="text-align: right;">
                                 <div class="col-3"></div>
                                 <div class="col-3"></div>
                                 <div class="col-3">
