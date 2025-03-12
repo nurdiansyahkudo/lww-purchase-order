@@ -125,9 +125,12 @@
                                         <div class="row">Jumlah termasuk Pajak :</div>
                                 </div>
                                 <div class="col-3" style="text-align: right">
+                                    <div class="row">
                                     <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
-                                    <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
-                                    
+                                    </div>
+                                    <div class="row">
+                                    <span t-esc="'{:,.2f}'.format(o.discount)"/>
+                                    </div>                                    
                                 </div>
 
                                 <!-- <div class='row' style="margin-bottom: 5px;">
