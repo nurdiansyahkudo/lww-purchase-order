@@ -164,34 +164,15 @@
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>                                   
                                 </div>
-
-                                <!-- <div class='row' style="margin-bottom: 5px;">
-                                    <div class="col-8"></div>
-                                    <div class="col-4">
-                                        <p style='text-align: left; font-size: 16px;'><em style="font-weight: bold;">Sub Total      : </em>
-                                            <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
-                                        </p>
-                                    </div>
-                                    <div class="col-4">
-                                        <p style='text-align: left; font-size: 16px;'>
-                                            <em style="font-weight: bold;">Pajak      :</em>
-                                            <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
-                                        </p>
-                                    </div>
-                                    <div class="col-4">
-                                        <p style='text-align: left; font-size: 16px;'>
-                                            <em style="font-weight: bold;">Total Keseluruhan      :</em>
-                                            <span t-esc="'{:,.2f}'.format(o.amount_total)"/>
-                                        </p>
-                                    </div> -->
-                                <!-- </div> -->
                             </div>
                             <div style="page-break-after:auto;">
                                 <!-- Note Section -->
                                 <div class='row' style="margin-bottom: 5px; border-top: 2px solid #205295; padding-top: 5px;">
                                     <div class="col-12 d-flex align-items-center">
                                         <p style='font-size: 16px; margin-right: 10px; margin-bottom: 0;'>Syarat dan Ketentuan : </p>
-                                            <span t-esc="o.notes or ''"/>
+                                    </div>
+                                    <div class="row">
+                                        <span t-esc="o.notes or ''"/>
                                     </div>
                                 </div>
                                 <!-- Signature Section -->
