@@ -117,7 +117,7 @@
                                 <div class="col-3"></div>
                                 <div class="col-3"></div>
                                 <div class="col-3">
-                                    <div class="row" style="text-align:left">Sub total : IDR
+                                    <div class="row" style="text-align: right;">Sub total : IDR
                                     </div> 
                                         <div class="row">Diskon                :</div>
                                         <div class="row">Total                 :</div>
@@ -125,7 +125,7 @@
                                         <div class="row">Jumlah termasuk Pajak :</div>
                                 </div>
                                 <div class="col-3" style="text-align: right">
-                                    <div class="row">
+                                    <div class="row" style="text-align: right;">
                                     <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
                                     </div>
                                     <div class="row">
