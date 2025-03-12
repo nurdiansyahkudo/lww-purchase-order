@@ -44,7 +44,7 @@
                                 <div class="col-6 text-left">
                                     <strong style="font-size: 16px; margin-left: 0;">To: </strong>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-6'>
                                             <p style='text-align: left; font-size: 16px;'><em> </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -52,7 +52,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-6'>
                                             <p style='text-align: left; font-size: 16px;'><em> </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -60,7 +60,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-6'>
                                             <p style='text-align: left; font-size: 16px;'><em> </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -68,7 +68,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-6'>
                                             <p style='text-align: left; font-size: 16px;'></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'><em>Telp. </em>
@@ -76,7 +76,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-6'>
                                             <p style='text-align: left; font-size: 16px;'><em> </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
