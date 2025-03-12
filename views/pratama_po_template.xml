@@ -143,19 +143,19 @@
                                         <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
                                     </div>
                                     <!-- Diskon -->
-                                    <div class="row justify-content-row">
+                                    <div class="row justify-content-end">
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div> 
                                     <!-- Total -->
-                                    <div class="row justify-content-row">
+                                    <div class="row justify-content-end">
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>
                                     <!-- Pajak -->
-                                    <div class="row justify-content-row">
+                                    <div class="row justify-content-end">
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>
                                     <!-- Total Keseluruhan -->
-                                    <div class="row justify-content-row">
+                                    <div class="row justify-content-end">
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>                                   
                                 </div>
