@@ -30,7 +30,8 @@
                             <div style="margin-top: 0; text-align: center; display: flex; justify-content: center; gap: 10px; align-items: center;">
                                 <p style="font-size: 16px; margin: 0; display: inline-block;">No: </p>
                                 <span t-esc="o.no_po or ''" style="font-size: 15px;"/>
-                                
+                            </div>
+                            <div style="margin-top: 0; text-align: center; display: flex; justify-content: center; gap: 10px; align-items: center;">
                                 <p style="font-size: 16px; margin: 0; display: flex;">Tanggal: </p> 
                                 <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
                             </div>
