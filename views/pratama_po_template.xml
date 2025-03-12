@@ -117,13 +117,15 @@
                                 <div class="col-3"></div>
                                 <div class="col-3"></div>
                                 <div class="col-3">
-                                    <div class="row" style="text-align:left">Sub total : IDR
-                                        <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/> 
-                                    </div> 
-                                    <div class="row">Diskon                :</div>
-                                    <div class="row">Total                 :</div>
-                                    <div class="row">Pajak                 :</div>
-                                    <div class="row">Jumlah termasuk Pajak :</div>
+                                    <div class="row" style="text-align: left">
+                                        <div class="row">Sub total : IDR
+                                            <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/> 
+                                        </div> 
+                                        <div class="row">Diskon                :</div>
+                                        <div class="row">Total                 :</div>
+                                        <div class="row">Pajak                 :</div>
+                                        <div class="row">Jumlah termasuk Pajak :</div>
+                                    </div>
                                 </div>
                                 <div class="col-3"></div>
 
