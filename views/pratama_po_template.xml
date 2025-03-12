@@ -140,27 +140,27 @@
                                 <div class="col-3" style="text-align: right;">
                                     <!-- Sub Total -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
+                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
                                     </div>
                                     <!-- Diskon -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
+                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div> 
                                     <!-- Total -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
+                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;nbsp;nbsp;nbsp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>
                                     <!-- Pajak -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
+                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;nbsp;nbsp;nbsp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>
                                     <!-- Total Keseluruhan -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
+                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>                                   
                                 </div>
