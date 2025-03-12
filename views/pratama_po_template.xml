@@ -139,7 +139,7 @@
                                 <!-- Kolom Nilai -->
                                 <div class="col-3" style="text-align: right;">
                                     <!-- Sub Total -->
-                                    <t><tr>
+                                    <t t-set="counter" t-value="counter"/><tr>
                                         <div class="row justify-content-end">
                                             <td><span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;</td>
                                             <td><span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/></td>
