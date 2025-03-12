@@ -172,7 +172,7 @@
                                         <p style='font-size: 16px; margin-right: 10px; margin-bottom: 0;'>Syarat dan Ketentuan : </p>
                                     </div>
                                 </div>
-                                <div class="col-3"></div>
+                                <!-- <div class="col-3"></div> -->
                                 <div class="col-3">
                                     <span t-esc="o.notes or ''"/>
                                 </div>
