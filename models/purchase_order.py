@@ -15,6 +15,8 @@ class PurchaseOrder(models.Model):
             return self.env.ref('lww_purchase.action_report_spartadua_po').report_action(self)
         elif company.name == 'PT. PRATAMA DATAMAKSIMA':
             return self.env.ref('lww_purchase.action_report_pratama_po').report_action(self)
+        elif company.name == 'PT. IMADEA MAGKASAMA':
+            return self.env.ref('lww_purchase.action_report_imadea_po').report_action(self)
         else:
             return self.env.ref('lww_purchase.action_report_limawira_po').report_action(self)
 
