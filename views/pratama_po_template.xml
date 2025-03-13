@@ -146,12 +146,12 @@
                                     <!-- Diskon -->
                                     <div class="row justify-content-end">
                                         <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
-                                        <span t-esc="'{:,.2f}'.format(line.discount)"/>
+                                        <span t-esc="'{:,.2f}'.format(o.discount)"/>
                                     </div> 
                                     <!-- Total -->
                                     <div class="row justify-content-end">
                                         <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
-                                        <span t-esc="'{:,.2f}'.format(o.price_subtotal)"/>
+                                        <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>
                                     <!-- Pajak -->
                                     <div class="row justify-content-end">
