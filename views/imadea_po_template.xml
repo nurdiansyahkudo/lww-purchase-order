@@ -30,7 +30,6 @@
                             <!-- Address Section -->
                             <div class="row" style="margin-bottom: 5px; margin-top: 10px; border-bottom: 2px solid #35bdaf">
                                 <div class="col-6 text-left">
-                                    <strong style="font-size: 16px; margin-left: 5rem;">To: </strong>
                                     <div class='row'>
                                         <div class='col-3'>
                                             <p style='text-align: left; font-size: 16px;'><em>Name: </em></p>
@@ -89,10 +88,9 @@
                                     </div>
                                 </div>
                                 <div class="col-6 text-right" style="margin-left: 1rem; ">
-                                    <strong style="font-size: 16px; margin-left: 5rem;">Ship To: </strong>
                                     <div class='row'>
                                         <div class='col-3'>
-                                            <p style='text-align: left; font-size: 16px;'><em>Name: </em></p>
+                                            <strong><p style='text-align: left; font-size: 16px;'><em>Name: </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
                                             <span t-esc='o.company_id.name'/>
