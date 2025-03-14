@@ -139,6 +139,20 @@
             <field name="binding_type">report</field>
             <field name="paperformat_id" ref="lww_purchase.paperformat_portrait"/>
         </record>
+        
+        <!-- IMADE AMGKASAMA -->
+        <record id="action_report_imadea_po" model="ir.actions.report">
+            <field name="name">Print PO Imadea</field>
+            <field name="model">purchase.order</field>
+            <field name="report_name">lww_purchase.imadea_po_template</field>
+            <field name="report_file">lww_purchase.pratama_po_template</field>
+            <field name="print_report_name">(object.get_print_report_name())</field>
+            <field name="attachment"/>
+            <field name="report_type">qweb-pdf</field>
+            <field name="binding_model_id" ref="purchase.model_purchase_order"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="lww_purchase.paperformat_portrait"/>
+        </record>
 
     </data>
 </odoo>
