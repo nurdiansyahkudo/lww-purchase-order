@@ -19,12 +19,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row"></div>
-                        <div class="row"></div>
-                        <div class="row"></div>
                         <div class="col-4" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">                              
                             <div style="margin-top: 0; text-align: center; display: flex; justify-content: center; gap: 10px; align-items: center;">
-                                <p style="font-size: 16px; margin: 0; display: inline-block;">No: </p>
+                                <p style="font-size: 16px; margin: 0; display: inline-block;"><br/><br/>No: </p>
                                 <span t-esc="o.no_po or ''" style="font-size: 15px;"/>
                             </div>
                         </div>
