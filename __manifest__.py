@@ -13,7 +13,7 @@
         'views/bs_po_template.xml',
         'views/spartadua_po_template.xml',
         'views/pratama_po_template.xml',
-        'views/imadea_po_template.xml',
+        'views/imadea_p_template.xml',
         # FORM VIEW
         'views/purchase_order_view.xml',
     ],
