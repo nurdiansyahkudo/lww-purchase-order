@@ -115,7 +115,7 @@
                                     </div>
                                     <div class='row'>
                                         <div class='col-4'>
-                                            <strong><p style='text-align: left; font-size: 16px;'><em>Note </em></p><strong>
+                                            <strong><p style='text-align: left; font-size: 16px;'><em>Note </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
                                             <!-- <span t-esc='o.company_id.country_id.name'/> -->
@@ -123,7 +123,7 @@
                                     </div>
                                     <div class='row'>
                                         <div class='col-4'>
-                                            <strong><p style='text-align: left; font-size: 16px;'><em>Purchase Order Date </em></p><strong>
+                                            <strong><p style='text-align: left; font-size: 16px;'><em>Purchase Order Date </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
                                             <span t-esc='o.date_approve'/>
