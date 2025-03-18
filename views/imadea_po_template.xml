@@ -180,7 +180,7 @@
                             <div class='row'>
                                 <div class="col-8"></div>
 
-                                <div class="col-1" style="text-align: left">
+                                <div class="col-2" style="text-align: left">
                                     <div class="row justify-content-end">
                                         <div class="col-12">Sub total</div>
                                     </div>
@@ -199,7 +199,7 @@
                                 </div>
 
                                 <!-- Kolom Nilai -->
-                                <div class="col-3" style="text-align: right;">
+                                <div class="col-2" style="text-align: right;">
                                     <!-- Sub Total -->
                                     <div class="row justify-content-end">
                                         <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
