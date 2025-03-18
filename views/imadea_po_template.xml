@@ -32,7 +32,7 @@
                             <div class="row" style="display: flex;">
                                 <div class="col-6 text-left">
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Supplier </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -40,7 +40,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Supplier Address </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -48,7 +48,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Phone </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -56,7 +56,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Fax </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -64,7 +64,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Contact Person </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="col-6 text-right" style="margin-left: 1rem; ">
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Name: </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -82,7 +82,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Address: </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -90,7 +90,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <strong><p style='text-align: left; font-size: 16px;'><em>City: </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -98,7 +98,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <p style='text-align: left; font-size: 16px;'><em>Region: </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -106,7 +106,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <p style='text-align: left; font-size: 16px;'><em>Country: </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -114,7 +114,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <p style='text-align: left; font-size: 16px;'><em>Phone: </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
@@ -122,7 +122,7 @@
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-3'>
+                                        <div class='col-4'>
                                             <p style='text-align: left; font-size: 16px;'><em>Fax: </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
