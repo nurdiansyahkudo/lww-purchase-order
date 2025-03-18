@@ -178,9 +178,9 @@
 
                             <!-- Sub Total dst. -->
                             <div class='row'>
-                                <div class="col-7"></div>
+                                <div class="col-8"></div>
 
-                                <div class="col-2" style="text-align: left">
+                                <div class="col-1" style="text-align: left">
                                     <div class="row justify-content-end">
                                         <div class="col-12">Sub total</div>
                                     </div>
