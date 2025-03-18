@@ -71,11 +71,19 @@
                                             <span t-esc='o.partner_id.mobile'/>
                                         </div>
                                     </div>
+                                    <div class='row'>
+                                        <div class='col-4'>
+                                            <strong><p style='text-align: left; font-size: 16px;'><em>Email </em></p></strong>
+                                        </div>
+                                        <div class='col-9' style='font-size: 16px; border: 1px;'>
+                                            <span t-esc='o.partner_id.email'/>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-6 text-right" style="margin-left: 1rem; ">
                                     <div class='row'>
                                         <div class='col-4'>
-                                            <strong><p style='text-align: left; font-size: 16px;'><em>Name: </em></p></strong>
+                                            <strong><p style='text-align: left; font-size: 16px;'><em>Attachment </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
                                             <span t-esc='o.company_id.name'/>
@@ -83,50 +91,42 @@
                                     </div>
                                     <div class='row'>
                                         <div class='col-4'>
-                                            <strong><p style='text-align: left; font-size: 16px;'><em>Address: </em></p></strong>
+                                            <strong><p style='text-align: left; font-size: 16px;'><em>Project </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <span t-esc='o.company_id.street'/>
+                                            <span t-esc='o.project_id'/>
                                         </div>
                                     </div>
                                     <div class='row'>
                                         <div class='col-4'>
-                                            <strong><p style='text-align: left; font-size: 16px;'><em>City: </em></p></strong>
+                                            <strong><p style='text-align: left; font-size: 16px;'><em>Delivery Schedule </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <span t-esc='o.company_id.city'/>
+                                            <span t-esc='o.date_planned'/>
                                         </div>
                                     </div>
                                     <div class='row'>
                                         <div class='col-4'>
-                                            <p style='text-align: left; font-size: 16px;'><em>Region: </em></p>
+                                            <p style='text-align: left; font-size: 16px;'><em>Delivery Location </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <span t-esc='o.company_id.state_id.name'/>
+                                            <span t-esc='o.picking_type_id'/>
                                         </div>
                                     </div>
                                     <div class='row'>
                                         <div class='col-4'>
-                                            <p style='text-align: left; font-size: 16px;'><em>Country: </em></p>
+                                            <p style='text-align: left; font-size: 16px;'><em>Note </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <span t-esc='o.company_id.country_id.name'/>
+                                            <!-- <span t-esc='o.company_id.country_id.name'/> -->
                                         </div>
                                     </div>
                                     <div class='row'>
                                         <div class='col-4'>
-                                            <p style='text-align: left; font-size: 16px;'><em>Phone: </em></p>
+                                            <p style='text-align: left; font-size: 16px;'><em>Purchase Order Date </em></p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <span t-esc='o.company_id.phone'/>
-                                        </div>
-                                    </div>
-                                    <div class='row'>
-                                        <div class='col-4'>
-                                            <p style='text-align: left; font-size: 16px;'><em>Fax: </em></p>
-                                        </div>
-                                        <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <span t-esc='o.company_id.mobile'/>
+                                            <span t-esc='o.date_approve'/>
                                         </div>
                                     </div>
                                 </div>
