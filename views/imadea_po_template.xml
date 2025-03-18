@@ -30,6 +30,7 @@
                         <div class="page">
                             <!-- Address Section -->
                            <div class="col-6 text-left">
+                                <div>
                                     <div class='row'>
                                         <div class='col-3'>
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Supplier: </em></p></strong>
