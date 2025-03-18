@@ -177,11 +177,11 @@
                             </div>
 
                             <!-- Sub Total dst. -->
-                            <div class='row' style="text-align: right;">
+                            <div class='row'>
                                 <div class="col-3"></div>
                                 <div class="col-3"></div>
 
-                                <div class="col-3" style="text-align: right">
+                                <div class="col-3" style="text-align: left">
                                     <div class="row justify-content-end">
                                         <div class="col-12">Sub total</div>
                                     </div>
