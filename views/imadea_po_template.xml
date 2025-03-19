@@ -205,22 +205,22 @@
                                 <div class="col-2" style="text-align: right;">
                                     <!-- Sub Total -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
+                                        <!-- <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp; -->
                                         <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
                                     </div>
                                     <!-- Diskon -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
-                                        <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
+                                        <!-- <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp; -->
+                                        <span t-esc="'{:,.2f}'.format(o.discount_amount)"/>
                                     </div> 
                                     <!-- Total -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
+                                        <!-- <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp; -->
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>
                                     <!-- PPh -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
+                                        <!-- <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp; -->
                                         <!-- <span t-esc="'{:,.2f}'.format(o.)"/> -->
                                     </div>
                                     <!-- PPN -->
