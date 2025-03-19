@@ -86,7 +86,7 @@
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Attachment </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <!-- <span t-esc='o.company_id.name'/> -->
+                                            <!-- <span t-esc=''/> -->
                                         </div>
                                     </div>
                                     <div class='row'>
@@ -118,7 +118,7 @@
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Note </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <!-- <span t-esc='o.notes'/> -->
+                                            <!-- <span t-esc=''/> -->
                                         </div>
                                     </div>
                                     <div class='row'>
@@ -222,7 +222,7 @@
                                     <!-- PPh -->
                                     <div class="row justify-content-end">
                                         <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
-                                        <!-- <span t-esc="'{:,.2f}'.format(o.amount_tax)"/> -->
+                                        <!-- <span t-esc="'{:,.2f}'.format(o.)"/> -->
                                     </div>
                                     <!-- PPN -->
                                     <div class="row justify-content-end">
@@ -242,7 +242,11 @@
                                 </div>
                                 <!-- Signature Section -->
                                 <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
-                                    <div class="col-9"></div>
+                                    <div class="col-9">
+                                        <div style="display: flex; align-items: center; font-size: 16px; margin-bottom: 0;">
+                                                <p style="white-space: nowrap;">Proses Pembayaran harus dilengkapi dengan : </p>
+                                        </div>
+                                    </div>
                                     <div class="col-3">
                                         <div class="row" style="margin-bottom: 0; margin-top: 0;">
                                             <div class="col-12" style="display: flex; flex-direction: column; align-items: center; padding: 0;">
