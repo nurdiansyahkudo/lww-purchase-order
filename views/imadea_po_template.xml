@@ -94,7 +94,7 @@
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Project </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <span t-esc='o.project_id'/>
+                                            <span t-esc='o.project_id.name'/>
                                         </div>
                                     </div>
                                     <div class='row'>
