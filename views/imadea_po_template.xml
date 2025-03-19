@@ -172,8 +172,9 @@
                                 <div class="col-8">
                                     <!-- Note Section -->
                                     <div class="row">
-                                        <div class="col-12 d-flex align-items-center">
-                                            <p style='font-size: 16px; margin-right: 10px; margin-bottom: 0;'>Description : <span t-esc="o.notes or ''"/> </p>
+                                        <div class="col-12" style="display: flex; align-items: center; font-size: 16px; margin-bottom: 0;">
+                                            <p style="white-space: nowrap;">Description : </p>
+                                            <span t-esc="o.notes or ''"/> 
                                         </div>
                                     </div>
                                 </div>
