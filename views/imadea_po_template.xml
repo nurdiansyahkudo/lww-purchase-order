@@ -68,7 +68,7 @@
                                             <strong><p style='text-align: left; font-size: 16px;'><em>Contact Person </em></p></strong>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
-                                            <span t-esc='o.partner_id.mobile'/>
+                                            <!-- <span t-esc='o.partner_id.mobile'/> -->
                                         </div>
                                     </div>
                                     <div class='row'>
