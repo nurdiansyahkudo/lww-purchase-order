@@ -8,7 +8,7 @@
                     <!-- Header Section -->
                     <div class="row" style="border-bottom: 3px solid #35bdaf;">
                         <div class="col-7" style="height: 150px; display: flex; flex-direction: column; justify-content: center;">
-                            <div class="text" style="font-size: 30px; text-align: left; padding-top: 200px;">
+                            <div class="text" style="font-size: 30px; text-align: left; padding-top: 150px;">
                                 <h1 style="font-size: 2rem;">
                                     <strong>PURCHASE ORDER LOCAL</strong>
                                 </h1>
