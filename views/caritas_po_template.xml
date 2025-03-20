@@ -6,7 +6,7 @@
             <t t-call="web.external_layout">
                 <t t-foreach="docs" t-as="o">
                     <!-- Header Section -->
-                    <div class="row" style="border-bottom: 3px solid #35bdaf;">
+                    <div class="row" style="border-bottom: 3.5px solid #35bdaf;">
                         <div class="col-7" style="height: 150px; display: flex; flex-direction: column; justify-content: center;">
                             <div class="text" style="font-size: 30px; text-align: left; padding-top: 125px;">
                                 <h1 style="font-size: 2rem;">
@@ -32,7 +32,7 @@
                     <main>
                         <div class="page" style="padding: 10px;">
                             <!-- Address Section -->
-                            <div class="row" style="margin-bottom: 5px; margin-top: 10px; border-bottom: 3px solid #35bdaf">
+                            <div class="row" style="margin-bottom: 5px; margin-top: 10px; border-bottom: 3.5px solid #35bdaf">
                                 <div class="col-6 text-left">
                                     <strong style="font-size: 16px;">To: </strong>
                                     <div class='row'>
@@ -169,7 +169,7 @@
                                 </div>
                             </div>
                             <!-- Reference and Date Section -->
-                            <div class="row" style="margin-bottom: 5px; margin-top: 10px; border-bottom: 3px solid #35bdaf">
+                            <div class="row" style="margin-bottom: 5px; margin-top: 10px; border-bottom: 3.5px solid #35bdaf">
                                 <table class="table table-sm" style="margin-bottom: 5px; border: 0.5px;">
                                     <thead style="border: 0.5px; background-color: #efefef">
                                         <tr>
@@ -271,7 +271,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class='row' style="margin-bottom: 5px; margin-top: 5px; border-bottom: 3px solid #35bdaf">
+                            <!-- <div class='row' style="margin-bottom: 5px; margin-top: 5px; border-bottom: 3.5px solid #35bdaf">
                                 <div class="col-8"></div>
                                 <div class="col-4">
                                     <p style='text-align: left; font-size: 16px;'><em style="font-weight: bold;">Sub Total: </em>
