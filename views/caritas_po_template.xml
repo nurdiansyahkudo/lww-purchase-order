@@ -250,6 +250,27 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <!-- Note Section -->
+                            <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
+                                <div class="col-6 text-left">
+                                    <div class='row'>
+                                        <div class='col-3'>
+                                            <p style='text-align: right; font-size: 16px;'>NOTE : </p>
+                                        </div>
+                                        <div class='col-9' style='font-size: 16px; border: 1px; margin-left: 0.5rem;'>
+                                            <span t-esc="o.notes or ''"/>
+                                        </div>
+                                    </div>
+                                    <div class='row'>
+                                        <div class='col-3'>
+                                            <p style='text-align: right; font-size: 16px;'>TERM : </p>
+                                        </div>
+                                        <div class='col-9' style='font-size: 16px; border: 1px; margin-left: 0.5rem;'>
+                                            <span t-esc="o.notes or ''"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <!-- <div class='row' style="margin-bottom: 5px; margin-top: 5px; border-bottom: 3px solid #35bdaf">
                                 <div class="col-8"></div>
                                 <div class="col-4">
@@ -263,11 +284,6 @@
                                 <div class="row" style="margin-bottom: 5px; margin-top: 10px;">
                                     <table class="table table-sm" style="margin-left: 5.5rem; margin-bottom: 5px; border: 0.5px; width: 80%;">
                                         <thead style="border: 0.5px;">
-                                            <tr>
-                                                <th colspan="4" style="font-weight: bold; font-size: 16px; text-align: center; background-color: #efefef">
-                                                    T  O  T  A  L
-                                                </th>
-                                            </tr>
                                             <tr>
                                                 <th style="font-size: 16px; text-align: center; font-weight: bold;">CURRENCY</th>
                                                 <th style="font-size: 16px; text-align: center; font-weight: bold;">SUB TOTAL</th>
@@ -288,19 +304,6 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div>
-                                <!-- Note Section -->
-                                <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
-                                    <div class="col-6 text-left">
-                                        <div class='row'>
-                                            <div class='col-3'>
-                                                <p style='text-align: right; font-size: 16px;'>NOTE : </p>
-                                            </div>
-                                            <div class='col-9' style='font-size: 16px; border: 1px; margin-left: 0.5rem;'>
-                                                <span t-esc="o.notes or ''"/>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <!-- Signature Section -->
                                 <div style="page-break-after: auto;">
