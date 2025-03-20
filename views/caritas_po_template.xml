@@ -16,10 +16,10 @@
                         </div>
                         <div class="col-5">
                             <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo.decode()" 
-                            style="max-width: 350px; height: auto;" />
+                            style="max-width: 350px; height: auto;"/>
                             <div style="font-size: 13px; line-height: 1.5; text-align: right;">
                                 <p>
-                                    <span t-esc="o.company_id.street"/> <br/>
+                                    <span t-esc="o.company_id.street"/><br/>
                                     <span t-esc="o.company_id.city"/> - <span t-esc="o.company_id.zip"/>, 
                                     <span t-esc="o.company_id.country_id.name"/><br/>
                                     Phone: <span t-esc="o.company_id.phone"/><br/>
@@ -91,6 +91,14 @@
                                             <span t-esc='o.partner_id.mobile'/>
                                         </div>
                                     </div>
+                                    <div class='row'>
+                                        <div class='col-3'>
+                                            <p style='text-align: left; font-size: 16px;'><em>A t t n: </em></p>
+                                        </div>
+                                        <div class='col-9' style='font-size: 16px; border: 1px;'>
+                                            <span t-esc='o.partner_id.mobile'/>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-6 text-right" style="margin-left: 1rem; ">
                                     <strong style="font-size: 16px;">Ship To: </strong>
@@ -148,6 +156,14 @@
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px;'>
                                             <span t-esc='o.company_id.mobile'/>
+                                        </div>
+                                    </div>
+                                    <div class='row'>
+                                        <div class='col-3'>
+                                            <p style='text-align: left; font-size: 16px;'><em>A t t n: </em></p>
+                                        </div>
+                                        <div class='col-9' style='font-size: 16px; border: 1px;'>
+                                            <span t-esc='o.partner_id.mobile'/>
                                         </div>
                                     </div>
                                 </div>
