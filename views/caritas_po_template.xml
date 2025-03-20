@@ -250,14 +250,14 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class='row' style="margin-bottom: 5px; margin-top: 5px; border-bottom: 3px solid #35bdaf">
+                            <!-- <div class='row' style="margin-bottom: 5px; margin-top: 5px; border-bottom: 3px solid #35bdaf">
                                 <div class="col-8"></div>
                                 <div class="col-4">
                                     <p style='text-align: left; font-size: 16px;'><em style="font-weight: bold;">Sub Total: </em>
                                         <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
                                     </p>
                                 </div>
-                            </div>
+                            </div> -->
                             <div style="page-break-after:auto;">
                                 <!-- Total Section -->
                                 <div class="row" style="margin-bottom: 5px; margin-top: 10px;">
