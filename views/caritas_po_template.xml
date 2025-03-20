@@ -209,7 +209,7 @@
                             <!-- Table Product -->
                             <div class="row" style="margin-bottom: 5px; margin-top: 10px;">
                                 <table class="table table-sm" style="margin-bottom: 5px; border: 0.5px;">
-                                    <thead style="border: 0.5px;">
+                                    <thead style="border: 0.5px; background-color: #efefef">
                                         <tr>
                                             <th style="font-size: 16px; text-align: center; font-weight: bold;">Part Number</th>
                                             <th style="font-size: 16px; text-align: center; font-weight: bold;">Product Name</th>
@@ -282,7 +282,7 @@
                             <div style="page-break-after:auto;">
                                 <!-- Total Section -->
                                 <div class="row" style="margin-bottom: 5px; margin-top: 10px;">
-                                    <table class="table table-sm" style="margin-left: 5.5rem; margin-bottom: 5px; border: 0.5px; width: 80%;">
+                                    <table class="table table-sm" style="margin-left: auto; margin-right: 0; margin-bottom: 5px; border: 0.5px; width: 80%;">
                                         <thead style="border: 0.5px;">
                                             <tr>
                                                 <th style="font-size: 16px; text-align: center; font-weight: bold;">CURRENCY</th>
