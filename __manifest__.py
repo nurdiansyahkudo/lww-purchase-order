@@ -15,6 +15,7 @@
         'views/pratama_po_template.xml',
         'views/imadea_po_template.xml',
         'views/caritas_po_template.xml',
+        'views/sparindo_po_template.xml',
         # FORM VIEW
         'views/purchase_order_view.xml',
     ],
