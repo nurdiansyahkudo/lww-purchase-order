@@ -175,10 +175,9 @@
                                         <tr>
                                             <th style="font-size: 16px; text-align: center;">OUR REF NO</th>
                                             <th style="font-size: 16px; text-align: center;">DATE</th>
-                                            <th style="font-size: 16px; text-align: center;">VALID</th>
+                                            <th style="font-size: 16px; text-align: center;">VALID UNTIL</th>
                                             <th style="font-size: 16px; text-align: center;">POINT OF CHARGE</th>
                                             <th style="font-size: 16px; text-align: center;">SHIP VIA</th>
-                                            <th style="font-size: 16px; text-align: center;">YOUR REF NO</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -202,7 +201,7 @@
                                             </td>
                                         <!-- Your Ref No -->
                                             <!-- <td class="text-center" style="font-size: 15px;"><span t-esc="o.origin or ''" style="font-size: 15px;"/></td> -->
-                                            <td class="text-center" style="font-size: 15px;"><span t-esc="o.partner_ref or ''" style="font-size: 15px;"/></td>
+                                            <!-- <td class="text-center" style="font-size: 15px;"><span t-esc="o.partner_ref or ''" style="font-size: 15px;"/></td> -->
                                         </tr>
                                     </tbody>
                                 </table>
