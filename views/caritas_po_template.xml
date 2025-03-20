@@ -255,7 +255,7 @@
                                 <div class="col-6 text-left">
                                     <div class='row'>
                                         <div class='col-3'>
-                                            <p style='text-align: right; font-size: 16px;'>NOTE : </p>
+                                            <p style='text-align: right; font-size: 16px;'>Note : </p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px; margin-left: 0.5rem;'>
                                             <span t-esc="o.notes or ''"/>
@@ -263,7 +263,7 @@
                                     </div>
                                     <div class='row'>
                                         <div class='col-3'>
-                                            <p style='text-align: right; font-size: 16px;'>TERM : </p>
+                                            <p style='text-align: right; font-size: 16px;'>Term : </p>
                                         </div>
                                         <div class='col-9' style='font-size: 16px; border: 1px; margin-left: 0.5rem;'>
                                             <span t-esc="o.notes or ''"/>
@@ -283,23 +283,23 @@
                                 <!-- Total Section -->
                                 <div class="row" style="margin-bottom: 5px; margin-top: 10px;">
                                     <table class="table table-sm" style="margin-left: auto; margin-right: 0; margin-bottom: 5px; border: 0.5px; width: 80%;">
-                                        <thead style="border: 0.5px;">
+                                        <thead style="border: 0.5px; background-color: #efefef">
                                             <tr>
-                                                <th style="font-size: 16px; text-align: center; font-weight: bold;">CURRENCY</th>
-                                                <th style="font-size: 16px; text-align: center; font-weight: bold;">SUB TOTAL</th>
-                                                <th style="font-size: 16px; text-align: center; font-weight: bold;">TAX</th>
-                                                <th style="font-size: 16px; text-align: center; font-weight: bold;">GRAND TOTAL</th>
+                                                <th style="font-size: 16px; text-align: center; font-weight: bold;">CURR</th>
+                                                <th style="font-size: 16px; text-align: center; font-weight: bold;">VALUE</th>
+                                                <th style="font-size: 16px; text-align: center; font-weight: bold;">VAT</th>
+                                                <th style="font-size: 16px; text-align: center; font-weight: bold;">TOTAL</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                            <!-- Currency -->
+                                            <!-- CURR -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="o.currency_id.name or ''" style="font-size: 15px;"/></td>
-                                            <!-- Sub Total -->
+                                            <!-- VALUE -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="'{:,.2f}'.format(o.amount_untaxed)" style="font-size: 15px;"/></td>
-                                            <!-- Tax -->
+                                            <!-- VAT -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="'{:,.2f}'.format(o.amount_tax)" style="font-size: 15px;"/></td>
-                                            <!-- Grand Total -->
+                                            <!-- TOTAL -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="'{:,.2f}'.format(o.amount_total)" style="font-size: 15px;"/></td>
                                             </tr>
                                         </tbody>
