@@ -81,7 +81,7 @@
                                             <td class="col-3" style="border: 1px solid; border-top: none; border-right: none;">
                                                 &amp;nbsp;Contact Person
                                             </td>
-                                            <td class="col-9" style="border: 1px solid; border-left: none; border-top: none;">
+                                            <!-- <td class="col-9" style="border: 1px solid; border-left: none; border-top: none;"> -->
                                                 : <span t-esc="o.effective_date.strftime('%d-%b-%y') or ''" style="text-align: left; font-size: 16px; margin-left: 3px;"/>
                                             </td>
                                         </tr>
@@ -102,9 +102,9 @@
                                             <td class="col-4" style="border: 1px solid; border-top: none; border-bottom: none; border-right: none;">
                                                 &amp;nbsp;Purchase order Date
                                             </td>
-                                            <td class="col-8" style="border: 1px solid; border-left: none; border-bottom: none; border-top: none;">
+                                            <!-- <td class="col-8" style="border: 1px solid; border-left: none; border-bottom: none; border-top: none;">
                                                 : <span t-esc="(o.date_order or o.date_approve).strftime('%d-%b-%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
-                                            </td>
+                                            </td> -->
                                         </tr>
                                         <tr>
                                             <td class="col-4" style="border: 1px solid; border-top: none; border-bottom: none; border-right: none;">
