@@ -40,7 +40,7 @@
                                     <p style='text-align: left; font-size: 16px;'>Shipping To : </p>
                                 </div>
                                 <div class='col-8' style='font-size: 16px; border: 1px;'>
-                                    <span t-esc="o.picking_type_id.company_id.name or ''"/>
+                                    <!-- <span t-esc="o.picking_type_id.company_id.name or ''"/> -->
                                     <!-- : <span t-esc="o.date_approve.strftime('%d-%b-%y') or ''"/> -->
                                 </div>
                             </div>
@@ -82,8 +82,8 @@
                                                 &amp;nbsp;Contact Person
                                             </td>
                                             <!-- <td class="col-9" style="border: 1px solid; border-left: none; border-top: none;"> -->
-                                                : <span t-esc="o.effective_date.strftime('%d-%b-%y') or ''" style="text-align: left; font-size: 16px; margin-left: 3px;"/>
-                                            </td>
+                                                <!-- : <span t-esc="o.effective_date.strftime('%d-%b-%y') or ''" style="text-align: left; font-size: 16px; margin-left: 3px;"/>
+                                            </td> -->
                                         </tr>
                                     </table>
                                 </div>
