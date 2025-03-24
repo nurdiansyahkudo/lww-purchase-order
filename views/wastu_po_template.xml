@@ -12,7 +12,6 @@
                                 <p style="font-weight: bold; margin-bottom: 2px; font-size: 20px"><span t-esc="o.company_id.name or ''" style="font-weight: bold;"/></p>
                                 <p>
                                     <span t-esc="o.company_id.street"/> <br/>
-                                    <span t-esc="o.company_id.city"/> <br/>
                                     <span t-esc="o.company_id.state_id.name"/> <span t-esc="o.company_id.zip"/> <span t-esc="o.company_id.country_id.name"/><br/>
                                     Telepon: <span t-esc="o.company_id.phone"/><br/>
                                     Fax: <span t-esc="o.company_id.mobile"/>
