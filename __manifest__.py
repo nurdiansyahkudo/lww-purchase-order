@@ -17,6 +17,7 @@
         'views/caritas_po_template.xml',
         'views/sparindo_po_template.xml',
         'views/wastu_po_template.xml',
+        'views/amanera_po_template.xml',
         # FORM VIEW
         'views/purchase_order_view.xml',
     ],
