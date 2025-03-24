@@ -12,8 +12,10 @@
                                 <p style="font-weight: bold; margin-bottom: 2px; font-size: 20px"><span t-esc="o.company_id.name or ''" style="font-weight: bold;"/></p>
                                 <p>
                                     <span t-esc="o.company_id.street"/> <br/>
+                                    <span t-esc="o.company_id.city"/> <br/>
                                     <span t-esc="o.company_id.state_id.name"/> <span t-esc="o.company_id.zip"/> <span t-esc="o.company_id.country_id.name"/><br/>
                                     Telepon: <span t-esc="o.company_id.phone"/><br/>
+                                    Fax: <span t-esc="o.company_id.mobile"/>
                                 </p>
                             </div>
                         </div>
@@ -30,29 +32,8 @@
                                 <div class='col-8'>
                                     <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo.decode()" 
                                   style="max-width: 180px; height: auto;" />
-                                </div>    
-                            </div>
-                            <div class='row' style="padding-top: 70px;">
-                                <div class='col-4'>
-                                    <p style='text-align: left; font-size: 16px;'>Shipping To : </p>
                                 </div>
-                                <div class='col-8' style='font-size: 16px; border: 1px;'>
-                                    <span t-esc="o.picking_type_id.company_id.name or ''"></span>
-                                    <!-- : <span t-esc="o.date_approve.strftime('%d-%b-%y') or ''"/> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4"></div>
-                        <div class="col-4"></div>
-                        <div class="col-4"></div>
-                            <div class='row' style="text-align: right;">
-                                <div class='col-4'></div>
-                                <div class='col-8'>
-                                    <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo.decode()" 
-                                  style="max-width: 180px; height: auto;" />
-                                </div>    
+                                
                             </div>
                             <div class='row' style="padding-top: 70px;">
                                 <div class='col-4'>
@@ -100,9 +81,9 @@
                                             <td class="col-3" style="border: 1px solid; border-top: none; border-right: none;">
                                                 &amp;nbsp;Contact Person
                                             </td>
-                                            <!-- <td class="col-9" style="border: 1px solid; border-left: none; border-top: none;"> -->
-                                                <!-- : <span t-esc="o.effective_date.strftime('%d-%b-%y') or ''" style="text-align: left; font-size: 16px; margin-left: 3px;"/>
-                                            </td> -->
+                                            <td class="col-9" style="border: 1px solid; border-left: none; border-top: none;">
+                                                : <span t-esc="o.effective_date.strftime('%d-%b-%y') or ''" style="text-align: left; font-size: 16px; margin-left: 3px;"/>
+                                            </td>
                                         </tr>
                                     </table>
                                 </div>
@@ -121,9 +102,9 @@
                                             <td class="col-4" style="border: 1px solid; border-top: none; border-bottom: none; border-right: none;">
                                                 &amp;nbsp;Purchase order Date
                                             </td>
-                                            <!-- <td class="col-8" style="border: 1px solid; border-left: none; border-bottom: none; border-top: none;">
+                                            <td class="col-8" style="border: 1px solid; border-left: none; border-bottom: none; border-top: none;">
                                                 : <span t-esc="(o.date_order or o.date_approve).strftime('%d-%b-%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
-                                            </td> -->
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="col-4" style="border: 1px solid; border-top: none; border-bottom: none; border-right: none;">
@@ -216,7 +197,7 @@
                                 <!-- Total -->
                                     <div class='row' style="margin-bottom: 5px; margin-top: 5px;">
                                         <div class="col-8">
-                                            <p style='text-align: right; font-size: 16px;'><em style="font-weight: bold;">Total : </em></p>
+                                            <p style='text-align: right; font-size: 16px;'><em style="font-weight: bold;">Sub Total: </em></p>
                                         </div>
                                         <div class="col-4">
                                             <p style="font-size: 16px; text-align: right;">
@@ -226,7 +207,7 @@
                                     </div>
                                     <div class='row' style="margin-bottom: 5px; margin-top: 5px;">
                                         <div class="col-8">
-                                            <p style='text-align: right; font-size: 16px;'><em style="font-weight: bold;">Discount : </em></p>
+                                            <p style='text-align: right; font-size: 16px;'><em style="font-weight: bold;">Discount: </em></p>
                                         </div>
                                         <div class="col-4">
                                             <p style="font-size: 16px; text-align: right;">
@@ -236,7 +217,7 @@
                                     </div>
                                     <div class='row' style="margin-bottom: 5px; margin-top: 5px;">
                                         <div class="col-8">
-                                            <p style='text-align: right; font-size: 16px;'><em style="font-weight: bold;">Total After Discount : </em></p>
+                                            <p style='text-align: right; font-size: 16px;'><em style="font-weight: bold;">Total After Discount: </em></p>
                                         </div>
                                         <div class="col-4">
                                             <p style="font-size: 16px; text-align: right;">
@@ -246,7 +227,7 @@
                                     </div>
                                     <div class='row' style="margin-bottom: 5px; margin-top: 5px;">
                                         <div class="col-8">
-                                            <p style='text-align: right; font-size: 16px;'><em style="font-weight: bold;">PPN : </em></p>
+                                            <p style='text-align: right; font-size: 16px;'><em style="font-weight: bold;">PPN: </em></p>
                                         </div>
                                         <div class="col-4">
                                             <p style="font-size: 16px; text-align: right;">
@@ -256,11 +237,11 @@
                                     </div>
                                     <div class='row' style="margin-bottom: 10px; margin-top: 5px;">
                                         <div class="col-8">
-                                            <p style='text-align: right; font-size: 16px;'><em style="font-weight: bold;">Total Value : </em></p>
+                                            <p style='text-align: right; font-size: 16px;'><em style="font-weight: bold;">Total Value: </em></p>
                                         </div>
                                         <div class="col-4">
                                         <!-- Currency -->
-                                            <p style="font-size: 16px; text-align: right; font-weight: bold;">
+                                            <p style="font-size: 16px; text-align: left; font-weight: bold;">
                                               &amp;nbsp;
                                               <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
                                               <span t-esc="'{:,.2f}'.format(o.amount_total)" style="font-size: 16px; text-align: right; margin-left: 2px;"/>
