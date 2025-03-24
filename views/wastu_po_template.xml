@@ -240,7 +240,7 @@
                                         </div>
                                         <div class="col-4">
                                         <!-- Currency -->
-                                            <p style="font-size: 16px; text-align: left; font-weight: bold;">
+                                            <p style="font-size: 16px; text-align: right; font-weight: bold;">
                                               &amp;nbsp;
                                               <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
                                               <span t-esc="'{:,.2f}'.format(o.amount_total)" style="font-size: 16px; text-align: right; margin-left: 2px;"/>
