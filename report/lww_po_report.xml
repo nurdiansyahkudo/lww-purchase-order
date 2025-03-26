@@ -240,7 +240,7 @@
             <field name="paperformat_id" ref="lww_purchase.paperformat_landscape"/>
         </record>
 
-        <!-- AMERA BERSAMA ABADI -->
+        <!-- AMANERA BERSAMA ABADI -->
         <record id="action_report_amanera_po" model="ir.actions.report">
             <field name="name">Print PO Amanera</field>
             <field name="model">purchase.order</field>
