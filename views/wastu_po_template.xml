@@ -41,7 +41,7 @@
                         <div class="col-4">
                             <div class='row' style="padding-top: 70px;">
                                 <div class='col-4'>
-                                    <p style='text-align: left; font-size: 16px;'>Shipping To : </p>
+                                    <p style='text-align: left; font-size: 16px;'>Shiping To : </p>
                                 </div>
                                 <div class='col-8' style='font-size: 16px; border: 1px;'>
                                     <span t-esc="o.picking_type_id.company_id.name or ''"/>
