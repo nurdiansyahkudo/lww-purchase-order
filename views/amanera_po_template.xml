@@ -10,15 +10,6 @@
                         <div class="col-2">
                             <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo.decode()" 
                             style="max-width: 150px; height: auto;" />
-                            <div style="font-size: 12px; line-height: 1.5; text-align: left;">
-                                <p>
-                                    <span t-esc="o.company_id.street"/> <br/>
-                                    <span t-esc="o.company_id.street2"/> <br/>
-                                    <span t-esc="o.company_id.city"/> - <span t-esc="o.company_id.zip"/>, 
-                                    <span t-esc="o.company_id.country_id.name"/><br/>
-                                    Telp. <span t-esc="o.company_id.phone"/> Fax. <span t-esc="o.company_id.mobile"/>
-                                </p>
-                            </div>
                         </div>
                         <div class="col-5">
                             <div style="font-size: 12px; line-height: 1.5; text-align: left;">
@@ -32,17 +23,17 @@
                             </div>
                         </div>
                         <div class="col-5 text-left">
-                            <div style="margin-top: 0; text-align: center; display: flex; justify-content: center; gap: 10px; align-items: center;">
-                                <p style="font-size: 16px; margin: 0; display: inline-block;">No. Purchase Order : </p>
-                                <span t-esc="o.no_po or ''" style="font-size: 15px;"/>
+                            <div style="margin-top: 0; text-align: left; display: flex; justify-content: center; gap: 10px; align-items: center;">
+                                <p style="font-size: 12px; margin: 0; display: inline-block;">No. Purchase Order : </p>
+                                <span t-esc="o.no_po or ''" style="font-size: 12px;"/>
                             </div>
-                            <div style="margin-top: 0; text-align: center; display: flex; justify-content: center; gap: 10px; align-items: center;">
-                                <p style="font-size: 16px; margin-bottom: 10px; display: inline-block;">Lampiran : </p> 
-                                <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
+                            <div style="margin-top: 0; text-align: left; display: flex; justify-content: center; gap: 10px; align-items: center;">
+                                <p style="font-size: 12px; margin-bottom: 0; display: inline-block;">Lampiran : </p> 
+                                <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 12px;"/>
                             </div> 
-                            <div style="margin-top: 0; text-align: center; display: flex; justify-content: center; gap: 10px; align-items: center;">
-                                <p style="font-size: 16px; margin-bottom: 10px; display: inline-block;">Tanggal PO: </p> 
-                                <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 15px;"/>
+                            <div style="margin-top: 0; text-align: left; display: flex; justify-content: center; gap: 10px; align-items: center;">
+                                <p style="font-size: 12px; margin-bottom: 10px; display: inline-block;">Tanggal PO: </p> 
+                                <span t-esc="(o.date_order or o.date_approve).strftime('%d/%b/%y') if (o.date_order or o.date_approve) else ''" style="font-size: 12px;"/>
                             </div>                        
                         </div>
                     </div>
