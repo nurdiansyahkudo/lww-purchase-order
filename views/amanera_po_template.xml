@@ -7,14 +7,14 @@
                 <t t-foreach="docs" t-as="o">
                     <!-- Header Section -->
                     <div class="row">
-                        <div class="col-2">
+                        <div class="col-3">
                             <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo.decode()" 
-                            style="max-width: 150px; height: auto;" />
+                            style="width: 120px; height: 120px; object-fit: cover; border-radius: 4px;"/>
                         </div>
                         <div class="col-5">
                             <div style="font-size: 12px; line-height: 1.5; text-align: left;">
                                 <p>
-                                    <span t-esc="o.company_id.name"/> <br/>
+                                    <strong><span t-esc="o.company_id.name"/></strong><br/>
                                     <span t-esc="o.company_id.street"/> <br/>
                                     <span t-esc="o.company_id.street2"/> <br/>
                                     <span t-esc="o.company_id.city"/> - <span t-esc="o.company_id.zip"/>, 
@@ -23,7 +23,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-5 text-left">
+                        <div class="col-4 text-left">
                             <div style="margin-top: 0; text-align: left; display: flex; justify-content: center; gap: 10px; align-items: center;">
                                 <p style="font-size: 12px; margin: 0; display: inline-block;">No. Purchase Order : </p>
                                 <span t-esc="o.no_po or ''" style="font-size: 12px;"/>
