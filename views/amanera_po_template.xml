@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <!-- Template for Kwitansi -->
-        <template id="wastu_po_template">
+        <template id="amanera_po_template">
             <t t-call="web.external_layout">
                 <t t-foreach="docs" t-as="o">
                     <!-- Header Section -->
@@ -201,10 +201,10 @@
         </template>
 
         <!-- Wrapper Template -->
-        <template id="wastu_po">
+        <template id="amanera_po">
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
-                    <t t-call="wastu_po_template" t-lang="o.partner_id.lang"/>
+                    <t t-call="amanera_po_template" t-lang="o.partner_id.lang"/>
                 </t>
             </t>
         </template>
