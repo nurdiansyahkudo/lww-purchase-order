@@ -9,7 +9,7 @@
                     <div class="row">
                         <div class="col-2">
                             <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo.decode()" 
-                            style="width: 120px; height: 120px; object-fit: cover; border-radius: 4px;"/>
+                            style="width: 120px; height: 120px; object-fit: cover;"/>
                         </div>
                         <div class="col-5">
                             <div style="font-size: 12px; line-height: 1.5; text-align: left;">
