@@ -78,19 +78,18 @@
                                 </div>
                             </div>                        
                             <!-- Table Product -->
-                            <div style="font-size: 18px; margin-top: 20px;">Pembelian ini ditujukan untuk produk : </div>
+                            <div style="font-size: 18px; margin-top: 16px;">Pembelian ini ditujukan untuk produk : </div>
                             <div class="row" style="margin-bottom: 5px;">
                                 <table class="table table-sm" style="margin-bottom: 5px; border: 0.5px;">
                                     <thead style="border: 0.5px;">
                                         <tr>
-                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">No</th>
-                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Nama Produk</th>                                            
-                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Part Number</th>
-                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Kuantitas</th>
-                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Harga</th>
-                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Diskon</th>
-                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Kurs</th>
-                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Total</th>
+                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Item</th>
+                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">No. Material</th>                                            
+                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Deskripsi Barang</th>
+                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Qty</th>
+                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Satuan</th>
+                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Harga Per Unit</th>
+                                            <th style="font-size: 16px; text-align: center; font-weight: bold;">Total Harga</th>
                                         </tr>
                                     </thead>
                                     <tbody style="border: none;">
@@ -98,74 +97,56 @@
                                         <t t-foreach="o.order_line" t-as="line">
                                             <t t-set="counter" t-value="counter + 1"/>
                                             <tr>
-                                            <!-- No -->
+                                            <!-- Item -->
                                                 <td class="text-center" style="font-weight: bold;"><span t-esc="counter" style="font-weight: bold; text-align: center;"/></td>
-                                            <!-- Product Name -->
+                                            <!-- No. Material -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="line.product_id.name or ''" style="font-size: 15px;"/></td>
-                                            <!-- Part Number -->
+                                            <!-- Deskripsi Barang -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="line.product_id.default_code or ''" style="font-size: 15px;"/></td>
-                                            <!-- QTY -->
+                                            <!-- Qty -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="int(line.product_qty) or ''" style="font-size: 15px;"/></td>
-                                            <!-- Unit Price -->
+                                            <!-- Satuan -->
                                                 <td class="text-right" style="font-size: 15px; text-align: right;"><span t-esc="'{:,.2f}'.format(line.price_unit) or ''" style="font-size: 15px; text-align: right;"/></td>
-                                            <!-- Disc -->
+                                            <!-- Harga Per Unit -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="int(line.discount) or '0'" style="font-size: 15px;"/>%</td>
-                                            <!-- Currency -->
+                                            <!-- Total Harga -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="o.currency_id.name or ''" style="font-size: 15px;"/></td>
-                                            <!-- Total -->
-                                                <td class="text-right" style="font-size: 15px; text-align: right;"><span t-esc="'{:,.2f}'.format(line.price_subtotal) or ''"  style="font-size: 15px; text-align: right;"/></td>
                                             </tr>
                                         </t>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <!-- Sub Total dst. -->
+                            <!-- Total dst. -->
                             <div class='row' style="text-align: right;">
                                 <div class="col-3"></div>
                                 <div class="col-3"></div>
 
                                 <div class="col-3" style="text-align: right">
                                     <div class="row justify-content-end">
-                                        <div class="col-12">Sub total</div>
+                                        <div class="col-12">Total :</div>
                                     </div>
                                     <div class="row justify-content-end">
-                                        <div class="col-12">Diskon</div>
+                                        <div class="col-12">PPn :</div>
                                     </div>
                                     <div class="row justify-content-end">
-                                        <div class="col-12">Total</div>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-12">Pajak</div>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-12">Jumlah Keseluruhan</div>
+                                        <div class="col-12">Total + PPn :</div>
                                     </div>
                                 </div>
 
                                 <!-- Kolom Nilai -->
                                 <div class="col-3" style="text-align: right;">
-                                    <!-- Sub Total -->
+                                    <!-- Total -->
                                     <div class="row justify-content-end">
                                         <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
                                     </div>
-                                    <!-- Diskon -->
-                                    <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
-                                        <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
-                                    </div> 
-                                    <!-- Total -->
+                                    <!-- PPn -->
                                     <div class="row justify-content-end">
                                         <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>
-                                    <!-- Pajak -->
-                                    <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
-                                        <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
-                                    </div>
-                                    <!-- Total Keseluruhan -->
+                                    <!-- Total + PPn -->
                                     <div class="row justify-content-end">
                                         <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_total)"/>
@@ -176,7 +157,7 @@
                                 <!-- Note Section -->
                                 <div class="row">
                                     <div class="col-12 d-flex align-items-center">
-                                        <p style='font-size: 16px; margin-right: 10px; margin-bottom: 0;'>Syarat dan Ketentuan : </p>
+                                        <p style='font-size: 16px; margin-right: 10px; margin-bottom: 0;'>Syarat dan Kondisi : </p>
                                     </div>
                                 </div>
                                 <div class="col-3">
@@ -184,6 +165,11 @@
                                 </div>
                                 <!-- Signature Section -->
                                 <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p style='font-size: 16px; margin-right: 10px; margin-bottom: 0;'>Disetujui oleh : </p>
+                                    </div>
+                                </div>
                                     <div class="col-5"></div>
                                     <div class="col-7">
                                         <div class="row" style="margin-bottom: 0; margin-top: 0;">
