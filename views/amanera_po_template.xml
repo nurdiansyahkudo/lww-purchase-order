@@ -56,51 +56,25 @@
                         <div class="page">
                             <!-- Address Section -->  
                             <div class='row' style="text-align: left;">
-                                <div class="col-3" style="text-align: left">
-                                    <div class="row justify-content-end">
-                                        <div class="col-12">Kepada Yth</div>
+                                <div class="row" style="text-align: left;">
+                                <!-- Label -->
+                                    <div class="col-3">
+                                        <div class="mb-1">Kepada Yth</div>
+                                        <div class="mb-1">Alamat</div>
+                                        <div class="mb-1">Telp/Fax</div>
+                                        <div class="mb-1">Mata Uang</div>
+                                        <div class="mb-1">PIC</div>
+                                        <div class="mb-1">No. Referensi</div>
                                     </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-12">Alamat</div>
+                                <!-- Data -->
+                                    <div class="col-9">
+                                        <div class="mb-1">: <span t-esc="o.partner_id.name or ''"/></div>
+                                        <div class="mb-1">: <span t-esc="o.partner_id.address or ''"/></div>
+                                        <div class="mb-1">: <span t-esc="o.partner_id.mobile or ''"/></div>
+                                        <div class="mb-1">: <span t-esc="o.currency_id.name or ''"/></div>
+                                        <div class="mb-1">: <span t-esc="o.user_id.name or ''"/></div>
+                                        <div class="mb-1">: <span t-esc="o.ref or ''"/></div>
                                     </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-12">Telp/Fax</div>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-12">Mata Uang</div>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-12">PIC</div>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-12">No. Referensi</div>
-                                    </div>
-                                </div>
-                                <div class="col-9" style="text-align: left;">
-                                    <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: left;"/>&amp;nbsp; : 
-                                        <span t-esc="'{:,.2f}'.format(o.partner_id.name)"/>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: left;"/>&amp;nbsp; : 
-                                        <span t-esc="'{:,.2f}'.format(o.partner_id.addres)"/>
-                                    </div> 
-                                    <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: left;"/>&amp;nbsp; : 
-                                        <span t-esc="'{:,.2f}'.format(o.partner_id.mobile)"/>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: left;"/>&amp;nbsp; : 
-                                        <span t-esc="'{:,.2f}'.format(o.currendy_id.name)"/>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: left;"/>&amp;nbsp; : 
-                                        <span t-esc="'{:,.2f}'.format(o.amount_total)"/>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: left;"/>&amp;nbsp; : 
-                                        <span t-esc="'{:,.2f}'.format(o.amount_total)"/>
-                                    </div>                                      
                                 </div>
                             </div>                        
                             <!-- Table Product -->
