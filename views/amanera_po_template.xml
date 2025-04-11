@@ -78,9 +78,7 @@
                                 </div>
                             </div>                        
                             <!-- Table Product -->
-                            <div style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">
-                            Daftar Produk Pemesanan
-                            </div>
+                            <div style="font-size: 18px; margin-top: 20px;">Daftar Produk Pemesanan</div>
                             <div class="row" style="margin-bottom: 5px; margin-top: 10px;">
                                 <table class="table table-sm" style="margin-bottom: 5px; border: 0.5px;">
                                     <thead style="border: 0.5px;">
