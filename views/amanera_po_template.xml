@@ -58,7 +58,7 @@
                             <div class='row' style="text-align: left;">
                                 <div class="row" style="text-align: left;">
                                 <!-- Label -->
-                                    <div class="col-3">
+                                    <div class="col-2">
                                         <div class="mb-1">Kepada Yth</div>
                                         <div class="mb-1">Alamat</div>
                                         <div class="mb-1">Telp/Fax</div>
@@ -67,7 +67,7 @@
                                         <div class="mb-1">No. Referensi</div>
                                     </div>
                                 <!-- Data -->
-                                    <div class="col-9">
+                                    <div class="col-10">
                                         <div class="mb-1">: <span t-esc="o.partner_id.name or ''"/></div>
                                         <div class="mb-1">: <span t-esc="o.partner_id.street or ''"/></div>
                                         <div class="mb-1">: <span t-esc="o.partner_id.mobile or ''"/></div>
