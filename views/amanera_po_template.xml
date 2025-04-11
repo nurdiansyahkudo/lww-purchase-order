@@ -110,7 +110,7 @@
                                             <!-- Harga Per Unit -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="int(line.discount) or '0'" style="font-size: 15px;"/>%</td>
                                             <!-- Total Harga -->
-                                                <td class="text-center" style="font-size: 15px;"><span t-esc="o.currency_id.name or ''" style="font-size: 15px;"/></td>
+                                                <td class="text-center" style="font-size: 15px;"><span t-esc="o.amount_untaxed or ''" style="font-size: 15px;"/></td>
                                             </tr>
                                         </t>
                                     </tbody>
@@ -165,11 +165,6 @@
                                 </div>
                                 <!-- Signature Section -->
                                 <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
-                                <div class="row">
-                                    <div class="col-12 d-flex align-items-center">
-                                        <p style='font-size: 16px; margin-right: 10px; margin-bottom: 0;'>Disetujui oleh : </p>
-                                    </div>
-                                </div>
                                     <div class="col-5"></div>
                                     <div class="col-7">
                                         <div class="row" style="margin-bottom: 0; margin-top: 0;">
