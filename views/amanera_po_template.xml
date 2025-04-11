@@ -78,8 +78,8 @@
                                 </div>
                             </div>                        
                             <!-- Table Product -->
-                            <div style="font-size: 18px; margin-top: 20px;">Daftar Produk Pemesanan</div>
-                            <div class="row" style="margin-bottom: 5px; margin-top: 10px;">
+                            <div style="font-size: 18px; margin-top: 20px;">Pembelian ini ditujukan untuk produk : </div>
+                            <div class="row" style="margin-bottom: 5px;">
                                 <table class="table table-sm" style="margin-bottom: 5px; border: 0.5px;">
                                     <thead style="border: 0.5px;">
                                         <tr>
