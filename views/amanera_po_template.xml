@@ -19,7 +19,7 @@
                                     <span t-esc="o.company_id.street2"/> <br/>
                                     <span t-esc="o.company_id.city"/> - <span t-esc="o.company_id.zip"/>, 
                                     <span t-esc="o.company_id.country_id.name"/><br/>
-                                    Telp. / Fax <span t-esc="o.company_id.phone"/> / <span t-esc="o.company_id.mobile"/>
+                                    Telp. / Fax : <span t-esc="o.company_id.phone"/> / <span t-esc="o.company_id.mobile"/>
                                 </p>
                             </div>
                         </div>
@@ -79,6 +79,10 @@
                             </div>                        
                             <!-- Table Product -->
                             <div class="row" style="margin-bottom: 5px; margin-top: 10px;">
+                                <div class="6">
+                                    <div class="mb-1">Pembelian ini ditujukan untuk produk : </div>
+                                </div>
+                                <div class="6"></div>
                                 <table class="table table-sm" style="margin-bottom: 5px; border: 0.5px;">
                                     <thead style="border: 0.5px;">
                                         <tr>
