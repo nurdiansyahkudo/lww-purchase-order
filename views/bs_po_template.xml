@@ -26,7 +26,7 @@
                         <div class="col-3">
                             <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo.decode()" 
                             style="max-width: 150px; height: auto;" />
-                            <div class='row' style="padding-top: 70px;">
+                            <div class='row' style="padding-top: 30px;">
                                 <div class='col-3'>
                                     <p style='text-align: left; font-size: 14px;'>NO</p>
                                 </div>
