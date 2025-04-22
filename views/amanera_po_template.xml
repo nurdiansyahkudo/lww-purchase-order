@@ -72,8 +72,8 @@
                                         <div class="mb-1">: <span t-esc="o.partner_id.street or ''"/></div>
                                         <div class="mb-1">: <span t-esc="o.partner_id.mobile or ''"/></div>
                                         <div class="mb-1">: <span t-esc="o.currency_id.name or ''"/></div>
-                                        <div class="mb-1">: <span t-esc="o.user_id.name or ''"/></div>
-                                        <div class="mb-1">: <span t-esc="o.user_id.name or ''"/></div>
+                                        <div class="mb-1">: <span t-esc=""/></div>
+                                        <div class="mb-1">: <span t-esc=""/></div>
                                     </div>
                                 </div>
                             </div>                        
