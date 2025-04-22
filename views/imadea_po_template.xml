@@ -159,7 +159,7 @@
                                                 <td class="text-center" style="font-size: 15px; text-align: center;"><span t-esc="'{:,.2f}'.format(line.price_unit) or ''" style="font-size: 15px; text-align: right;"/></td>
                                             <!-- QTY -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="int(line.product_qty) or ''" style="font-size: 15px;"/></td>
-                                            <!-- Total -->
+                                            <!-- Subtotal -->
                                                 <td class="text-center" style="font-size: 16px; font-weight: bold; text-align: right;">
                                                     <span t-esc="'{:,.2f}'.format(o.amount_untaxed) or ''"/>
                                                 </td>
@@ -221,7 +221,7 @@
                                     <!-- Diskon -->
                                     <div class="row justify-content-end">
                                         <!-- <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp; -->
-                                        <span t-esc="'{:,.2f}'.format(line.discount) + '%'"/> 
+                                        <span t-esc="'{:,.2f}'.format(line.discount) + '%'"/>
                                     </div> 
                                     <!-- Total -->
                                     <div class="row justify-content-end">
@@ -231,7 +231,7 @@
                                     <!-- PPh -->
                                     <div class="row justify-content-end">
                                         <!-- <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp; -->
-                                        <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
+                                        <!-- <span t-esc="'{:,.2f}'.format(o.amount_tax)"/> -->
                                     </div>
                                     <!-- PPN -->
                                     <div class="row justify-content-end">

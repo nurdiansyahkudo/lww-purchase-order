@@ -24,6 +24,8 @@
                             </div>
                         </div>
                         <div class="col-4">
+                            <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo.decode()" 
+                            style="max-width: 350px; height: auto;" />
                             <div class='row' style="padding-top: 70px;">
                                 <div class='col-3'>
                                     <p style='text-align: left; font-size: 14px;'>NO</p>
@@ -148,7 +150,7 @@
                                             <!-- No -->
                                                 <td class="text-center" style="font-weight: bold;"><span t-esc="counter" style="font-weight: bold; text-align: center;"/></td>
                                             <!-- Part Number -->
-                                                <td class="text-center" style="font-size: 15px;"><span t-esc="line.product_id.name or ''" style="font-size: 15px;"/></td>
+                                                <td class="text-center" style="font-size: 15px;"><span t-esc="line.product_id.default_code or ''" style="font-size: 15px;"/></td>
                                             <!-- Product Name -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="line.product_id.name or ''" style="font-size: 15px;"/></td>
                                             <!-- QTY -->
