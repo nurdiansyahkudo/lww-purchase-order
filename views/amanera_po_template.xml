@@ -138,17 +138,14 @@
                                 <div class="col-3" style="text-align: right;">
                                     <!-- Total -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_untaxed)"/>
                                     </div>
                                     <!-- PPn -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_tax)"/>
                                     </div>
                                     <!-- Total + PPn -->
                                     <div class="row justify-content-end">
-                                        <span t-esc="o.currency_id.name or ''" style="font-size: 16px; text-align: right;"/>&amp;nbsp;
                                         <span t-esc="'{:,.2f}'.format(o.amount_total)"/>
                                     </div>                                   
                                 </div>
