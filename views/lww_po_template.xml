@@ -169,7 +169,7 @@
                                         <tr>
                                         <!-- Our Ref No -->
                                             <td class="text-center" style="font-size: 15px;">
-                                                <span t-esc="(o.name + ' ' + o.no_po) if o.name and o.no_po else (o.name or o.no_po or '')" style="font-size: 15px;"/>
+                                                <span t-esc="o.no_po or ''" style="font-size: 15px;"/>
                                             </td>
                                         <!-- Date -->
                                             <td class="text-center" style="font-size: 15px;">
@@ -181,9 +181,7 @@
                                         <!-- Point of Charge -->
                                             <td class="text-center" style="font-size: 15px;"><span t-esc="o.incoterm_id.name or ''" style="font-size: 15px;"/></td>
                                         <!-- Ship Via (Link to Receipt on carrier_id.name) -->
-                                            <td class="text-center" style="font-size: 15px;">
-                                                <span t-esc="dict(o.fields_get(allfields=['ship_via'])['ship_via']['selection']).get(o.ship_via, '')" style="font-size: 15px;"/>
-                                            </td>
+                                            <td class="text-center" style="font-size: 15px;"><span t-esc="o.ship_via or ''" style="font-size: 15px;"/></td>
                                         <!-- Your Ref No -->
                                             <!-- <td class="text-center" style="font-size: 15px;"><span t-esc="o.origin or ''" style="font-size: 15px;"/></td> -->
                                             <td class="text-center" style="font-size: 15px;"><span t-esc="o.partner_ref or ''" style="font-size: 15px;"/></td>
@@ -217,7 +215,9 @@
                                             <!-- Part Number -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="line.product_id.default_code or ''" style="font-size: 15px;"/></td>
                                             <!-- Product Name -->
-                                                <td class="text-center" style="font-size: 15px;"><span t-esc="line.product_id.name or ''" style="font-size: 15px;"/></td>
+                                                <td class="text-center" style="font-size: 15px; max-width: 300px; word-wrap: break-word; white-space: normal; overflow: hidden;">
+                                                    <span t-esc="line.product_id.name or ''" style="font-size: 15px;"/>
+                                                </td>
                                             <!-- QTY -->
                                                 <td class="text-center" style="font-size: 15px;"><span t-esc="int(line.product_qty) or ''" style="font-size: 15px;"/></td>
                                             <!-- Unit -->
@@ -303,6 +303,13 @@
                                         <div class="col-4"></div>
                                         <div class="col-4 text-center">
                                             <p style="text-align: center; margin-top: 120px; border-bottom: 1px solid; width: 80%; margin-left: 30px;"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8"></div>
+                                        <div class="col-4 text-center" style="margin-top: 120px;">
+                                            <p style='font-size: 16px; margin-bottom: 0;'>Vendor Approval</p>
+                                            <p style="border-top: 1px solid; width: 80%; margin: auto;"></p>
                                         </div>
                                     </div>
                                 </div>
