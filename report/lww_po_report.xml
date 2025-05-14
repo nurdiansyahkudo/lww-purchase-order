@@ -236,7 +236,7 @@
             <field name="name">Print PO Spartadua</field>
             <field name="model">purchase.order</field>
             <field name="report_name">lww_purchase.spartadua_po_jasa_template</field>
-            <field name="report_file">lww_purchase.spartadua_po-jasa_template</field>
+            <field name="report_file">lww_purchase.spartadua_po_jasa_template</field>
             <field name="print_report_name">(object.get_print_report_name())</field>
             <field name="attachment"/>
             <field name="report_type">qweb-pdf</field>
