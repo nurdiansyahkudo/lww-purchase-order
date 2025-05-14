@@ -107,16 +107,16 @@
                                                     &amp;nbsp;Delivery Place
                                                 </td>
                                                 <td colspan="3" style="border: 2px solid; border-bottom: none;">
-                                                    <span t-esc="o.company_id.name or '-'" style="text-align: left; font-size: 14px; margin-left: 5px;"/>
+                                                    <span t-esc="o.customer_id.name or '-'" style="text-align: left; font-size: 14px; margin-left: 5px;"/>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="col-3" style="border: 1px solid; border-top: none;"/>
                                                 <td class="col-3" style="border: 2px solid; border-top: none; border-right: none;">
-                                                    Phone <span t-esc="o.company_id.phone"/>  
+                                                    Phone <span t-esc="o.customer_id.phone"/>  
                                                 </td>
                                                 <td class="col-3" style="border: 2px solid; border-top: none; border-left: none; border-right: none;">
-                                                    Fax <span t-esc="o.company_id.mobile"/>
+                                                    Fax <span t-esc="o.customer_id.mobile"/>
                                                 </td>
                                                 <td class="col-3" style="border: 2px solid; border-top: none; border-left: none;">
                                                     Pic Internal : <span t-esc="o.employee_id.name"/>
