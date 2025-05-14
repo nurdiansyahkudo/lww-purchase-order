@@ -23,7 +23,6 @@
         'views/amanera_po_template.xml',
         # FORM VIEW
         'views/purchase_order_view.xml',
-        'views/bs_po__jasa_template.xml',
     ],
     'installable': True,
     'application': False,
