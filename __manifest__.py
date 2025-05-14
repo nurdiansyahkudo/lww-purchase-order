@@ -12,7 +12,7 @@
         'views/lww_po_template.xml',
         'views/lww_po_jasa_template.xml',
         'views/bs_po_template.xml',
-        'views/bs_po_jasa_template.xml',
+        'views/bs_po_asa_template.xml',
         'views/spartadua_po_template.xml',
         'views/spartadua_po_jasa_template.xml',
         'views/pratama_po_template.xml',
