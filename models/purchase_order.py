@@ -9,8 +9,17 @@ class PurchaseOrder(models.Model):
     def action_print_report(self):
         company = self.env['res.company'].browse(self.env.company.id)
         
-        if company.name == 'PT. BINA SERVICE':
+        if company.name == 'PT. LIMAWIRA WISESA' and self.customer_id:
+            # Gunakan template jasa jika customer_id tidak kosong
+            return self.env.ref('lww_purchase.action_report_lww_po_jasa').report_action(self)
+        elif company.name == 'PT. BINA SERVICE' and self.customer_id:
+            # Gunakan template jasa jika customer_id tidak kosong
+            return self.env.ref('lww_purchase.action_report_bs_po_jasa').report_action(self)
+        elif company.name == 'PT. BINA SERVICE':
             return self.env.ref('lww_purchase.action_report_bs_po').report_action(self)
+        elif company.name == 'PT. SPARTADUA RIBUJAYA' and self.customer_id:
+            # Gunakan template jasa jika customer_id tidak kosong
+            return self.env.ref('lww_purchase.action_report_spartadua_po_jasa').report_action(self)
         elif company.name == 'PT. SPARTADUA RIBUJAYA':
             return self.env.ref('lww_purchase.action_report_spartadua_po').report_action(self)
         elif company.name == 'PT. PRATAMA DATAMAKSIMA':

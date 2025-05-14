@@ -2,8 +2,8 @@
 <odoo>
     <data>
         <!-- Template for Kwitansi -->
-        <template id="bs_po_template">
-<t t-call="web.external_layout">
+        <template id="bs_po_jasa_template">
+            <t t-call="web.external_layout">
                 <t t-foreach="docs" t-as="o">
                     <!-- Header Section -->
                     <div class="row">
@@ -104,19 +104,19 @@
                                 <table class="table table-sm" style="margin-bottom: 5px; border: 1px solid;">
                                     <tr>
                                         <td class="col-3" style="border: 1px solid; border-bottom: none;">
-                                            &amp;nbsp;Delivery Place
+                                            &amp;nbsp;End User
                                         </td>
                                         <td colspan="3" style="border: 2px solid; border-bottom: none;">
-                                            <span t-esc="o.company_id.name or '-'" style="text-align: left; font-size: 14px; margin-left: 5px;"/>
+                                            <span t-esc="o.customer_id.name or '-'" style="text-align: left; font-size: 14px; margin-left: 5px;"/>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="col-3" style="border: 1px solid; border-top: none;"/>
                                         <td class="col-3" style="border: 2px solid; border-top: none; border-right: none;">
-                                            Phone <span t-esc="o.company_id.phone"/>  
+                                            Phone <span t-esc="o.customer_id.phone"/>  
                                         </td>
                                         <td class="col-3" style="border: 2px solid; border-top: none; border-left: none; border-right: none;">
-                                            Fax <span t-esc="o.company_id.mobile"/>
+                                            Fax <span t-esc="o.customer_id.mobile"/>
                                         </td>
                                         <td class="col-3" style="border: 2px solid; border-top: none; border-left: none;">
                                             Pic Internal : <span t-esc="o.employee_id.name"/>
@@ -229,8 +229,7 @@
                                             <p style="text-align: right; font-size: 16px;">NOTE : </p>
                                         </div>
                                         <div class="col-9" style="font-size: 16px; border: 1px; margin-left: 0.5rem;">
-                                            <span t-esc="o.notes or ''"
-                                                  style="display: inline-block; width: calc(100% - 135px); white-space: pre-wrap;" />
+                                            <span t-esc="o.notes or ''" style="display: inline-block; width: calc(100% - 135px); white-space: pre-wrap;"/>
                                         </div>
                                     </div>
                                 </div>
@@ -262,13 +261,14 @@
                     </main>
                 </t>
             </t>
+        </t>
         </template>
 
         <!-- Wrapper Template -->
-        <template id="bs_po">
+        <template id="bs_po_jasa">
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
-                    <t t-call="bs_po_template" t-lang="o.partner_id.lang"/>
+                    <t t-call="bs_po_jasa_template" t-lang="o.partner_id.lang"/>
                 </t>
             </t>
         </template>
