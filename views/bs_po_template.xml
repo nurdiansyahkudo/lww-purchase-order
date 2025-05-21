@@ -25,7 +25,7 @@
                                 </div>
                                 <div class="col-3">
                                     <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % o.company_id.logo.decode()" style="max-width: 150px; height: auto;"/>
-                                    <div class="row" style="padding-top: 15px;">
+                                    <div class="row" style="padding-top: 5px;">
                                         <div class="col-3">
                                             <p style="text-align: left; font-size: 14px;">NO</p>
                                         </div>
@@ -222,36 +222,42 @@
                                         </div>
                                     </div> -->
                                     <!-- Note Section -->
-                                    <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
-                                        <div class="col-6 text-left">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <p style="text-align: right; font-size: 16px;">NOTE : </p>
-                                                </div>
-                                                <div class="col-9" style="font-size: 16px; border: 1px; margin-left: 0.5rem;">
-                                                    <span t-esc="o.notes or ''"
-                                                        style="display: inline-block; width: calc(100% - 135px); white-space: pre-wrap;" />
-                                                </div>
-                                            </div>
-                                        </div>
+                                <!-- Note Section -->
+                                <div class="row" style="margin-top: 10px; margin-bottom: 5px;">
+                                    <div class="col-12">
+                                        <p style="font-size: 16px; margin-bottom: 0; width: 100%;">
+                                            <span style="display: inline-block; width: 130px;">NOTE:</span>
+                                            <span t-esc="o.notes or ''" style="display: inline-block; width: calc(100% - 135px); white-space: pre-wrap;"/>
+                                        </p>
                                     </div>
+                                </div>
 
                                     <footer>
-                                    <!-- Signature Section -->
+                                        <!-- Signature Section -->
                                         <div class="row" style="margin-bottom: 10px; margin-top: 10px;">
                                             <div class="col-5"/>
                                             <div class="col-7">
                                                 <div class="row">
+                                                    <!-- Prepared by -->
                                                     <div class="col-6">
                                                         <p style="text-align: center; font-size: 16px;">Prepared by, </p>
                                                         <p style="text-align: left; font-size: 16px;">Name : </p>
                                                         <p style="text-align: left; font-size: 16px;">Date : </p>
                                                         <p style="text-align: center; margin-top: 120px; border-bottom: 1px solid; width: 80%;"/>
                                                     </div>
+                                    
+                                                    <!-- Approved by -->
                                                     <div class="col-6" style="font-size: 16px; margin-left: 0.5rem;">
                                                         <p style="text-align: center; font-size: 16px;">Approved by, </p>
                                                         <p style="text-align: left; font-size: 16px;">Name : </p>
                                                         <p style="text-align: left; font-size: 16px;">Date : </p>
+                                                        <!-- Garis tanda tangan untuk Approved by -->
+                                                        <p style="text-align: center; margin-top: 120px; border-bottom: 1px solid; width: 80%;"/>
+                                    
+                                                        <p style="text-align: center; margin-top: 60px; font-size: 16px;">Approved by, </p>
+                                                        <p style="text-align: left; font-size: 16px;">Name : </p>
+                                                        <p style="text-align: left; font-size: 16px;">Date : </p>
+                                                        <!-- Garis tanda tangan untuk Approved by -->
                                                         <p style="text-align: center; margin-top: 120px; border-bottom: 1px solid; width: 80%;"/>
                                                     </div>
                                                 </div>

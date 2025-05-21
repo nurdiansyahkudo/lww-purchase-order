@@ -233,7 +233,7 @@
 
         <!-- SPARTADUA RIBUJAYA  JASA-->
         <record id="action_report_spartadua_po_jasa" model="ir.actions.report">
-            <field name="name">Print PO Spartadua</field>
+            <field name="name">Print PO Spartadua Jasa</field>
             <field name="model">purchase.order</field>
             <field name="report_name">lww_purchase.spartadua_po_jasa_template</field>
             <field name="report_file">lww_purchase.spartadua_po_jasa_template</field>
